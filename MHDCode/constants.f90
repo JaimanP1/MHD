@@ -35,8 +35,8 @@
 ! -------
 ! I/O
 ! -------
- character(*),parameter :: dir   = '/cluster/solarlab/nobackup/inosato/MHD/FLUX_EME/MHD/DATA/EMF/030/'
- character(*),parameter :: dir_r = '/cluster/solarlab/nobackup/inosato/MHD/FLUX_EME/POTE_DATA/320/'
+ character(*),parameter :: dir   = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/DATA/'
+ character(*),parameter :: dir_r = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/inData/'
 
 ! character(*),parameter :: dir_r  = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/POTE_DATA/320/'
 ! character(*),parameter :: dir    = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/MHD/DATA/EMF/'
