@@ -5,4 +5,4 @@ This code outputs both binary and vdc data to generate Magnetic Flux ropes in qu
 
 This code is parallelized.
 
-Breakdown of files:
+Refer to Wiki page for more information
