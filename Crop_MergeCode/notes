@@ -1,0 +1,22 @@
+Want to try to make a cropped region so that field lines and vector field is confined to poles
+
+constants: name of variables
+common: 
+subroutines:
+main
+
+What variable should I look for
+Which file should I change
+
+
+------------
+in constants.f90:
+
+
+N(X/Y)_ARR was changed from 360 to 260
+n(x/y)_avs was changed from 0 to 100
+
+
+Used these numbers because this is what I use for rake region for field lines in VAPOR
+
+want to only focus on constants because this way I do not interupt the actual code itself, only the parameters

@@ -44,7 +44,7 @@
 !  close(11)
 
 ! Non-subdomain version                                                                   
-   open(10, file = dir_r//"B3D_POTE_NONUNI.dat",form='unformatted')
+   open(10, file = dir_r//"B3D_POTE_360_360_360_M1",form='unformatted')
    read(10) bx_w, by_w, bz_w
    close(10)
 
@@ -85,7 +85,7 @@
   vz(:,:,:) = 0.0d0  
 
 !  bz2t_0(:,:) = bz(0,:,:)**2 !! Bz^2 at initial condition
-!  call iset__velocity
+  call iset__velocity
 
   return
 
@@ -148,6 +148,7 @@
   real(DP), parameter                :: timea      = 1.0
   real(DP), parameter                :: timew      = 0.5
   real(DP), parameter                :: tw         = 0.1d0
+! Changed this back to 1 for M1
   real(DP), parameter                :: v0         = 1.0e-02
 
 ! Divergence & Convergence
@@ -188,27 +189,27 @@
 !  Dale...2015
 !  psi(:,:) = (bz(0,:,:)**2/bzmax**2)*exp((bz(0,:,:)**2 -bzmax**2)/(tw*bzmax**2))
 
-!
-  do i = 0, nxm1
+  do i = -1, nxm1 ! Restricting region to set twisting motion
      ip = i+1
      im = i-1
- 
-  do j = 0, nym1
+
+  do j = -1, nym1
      jp = j+1
      jm = j-1
+
 !
-!     if(abs(bz(0,j,i)) <=  0.65.and.abs(bz(0,j,i)) >=  0.15) then
+     if(0.43<=xc(i).and.xc(i)<=0.57.and.0.43<=yc(j).and.yc(j)<=0.57) then
             vx2d_t(j,i) =   ( psi(jp,i)*d1y(j,+1)    &
                             + psi(j, i)*d1y(j, 0)    &
                             + psi(jm,i)*d1y(j,-1) )
-!                                                   
-            vy2d_t(j,i) = - ( psi(j,ip)*d1x(i,+1)    &
+                                                   
+            vy2d_t(j,i) = -( psi(j,ip)*d1x(i,+1)    &
                             + psi(j,i )*d1x(i, 0)    &
                             + psi(j,im)*d1x(i,-1) )
-!     else
-!            vx2d_t(j,i) = 0.0d0
-!            vy2d_t(j,i) = 0.0d0
-!     endif
+     else
+            vx2d_t(j,i) = 0.0d0
+            vy2d_t(j,i) = 0.0d0
+     endif
   enddo
   enddo
 
@@ -250,6 +251,9 @@
 ! ------------------------------------------------------------
 ! Total Velocity
 ! ------------------------------------------------------------
+
+! THIS IS WHAT TO EDIT TO CHANGE STRENGTH OF TWISTING MOTION
+
   vx2d(:,:) = vx2d_t(:,:)
   vy2d(:,:) = vy2d_t(:,:)
 

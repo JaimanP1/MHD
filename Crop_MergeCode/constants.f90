@@ -8,12 +8,12 @@
   implicit none
 
 ! === processor number ===
-  integer, parameter :: N_PROC  = 64  ! number of the processors >= 1
-  integer, parameter :: N_PROC_X= 8
+  integer, parameter :: N_PROC  = 72  ! number of the processors >= 1
+  integer, parameter :: N_PROC_X= 9
   integer, parameter :: N_PROC_Y= 8
 
 ! === grid number in a sub-domain ===
-  integer, parameter :: NX = 45
+  integer, parameter :: NX = 40
   integer, parameter :: NY = 45
   integer, parameter :: NZ = 360
 
@@ -33,12 +33,12 @@
   integer, parameter :: NZ_R=NZ_W/LEAPZ
 
 ! === AVS rearrange grid ===
-  integer, parameter :: NX_ARR = 360 !200  
-  integer, parameter :: NY_ARR = 360 !200  
+  integer, parameter :: NX_ARR = 200 !200  
+  integer, parameter :: NY_ARR = 200 !200  
   integer, parameter :: NZ_ARR = 360 !200  
 
-  integer, parameter :: NX_avs = 0 !50   !! Start point
-  integer, parameter :: NY_avs = 0 !50   !! Start Point
+  integer, parameter :: NX_avs = 80 !50   !! Start point
+  integer, parameter :: NY_avs = 80 !50   !! Start Point
 
 ! === sub-grid number ===
   integer, parameter :: nxm1=NX-1
@@ -59,10 +59,9 @@
   complex(DPC), parameter :: IUNIT = (0.0_DP, 1.0_DP)
 
 ! === READ & OUTPUT FOLDER ============
-  character(*) ,parameter :: dir_r = '/cluster/solarlab/nobackup/Jaiman/su23TwistUni/outData/DATA/test2/'
-  character(*) ,parameter :: dir   = '/cluster/solarlab/nobackup/Jaiman/su23TwistUni/outData/VAPOR/debug/'
-  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/Jaiman/su23TwistUni/outData/VAPOR/'
-
+  character(*) ,parameter :: dir_r = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/DATA/'
+  character(*) ,parameter :: dir   = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/VAPOR/merge/'
+  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/VAPOR/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file

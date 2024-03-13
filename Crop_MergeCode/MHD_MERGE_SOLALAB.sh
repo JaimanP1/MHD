@@ -3,8 +3,8 @@
 #SBATCH --ntasks-per-node=1
 # Number of nodes
 #SBATCH --exclusive
-#SBATCH --nodes=2
-#SBATCH --nodelist=node[811,812]
+#SBATCH --nodes=1
+#SBATCH --nodelist=node[812]
 #SBATCH --mem=0
 # Clear the environment from any previously loaded modules
 module purge > /dev/null 2>&1
