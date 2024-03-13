@@ -1,0 +1,43 @@
+  &NLIST00
+  XL =   1.000000000,
+  YL =   1.000000000,
+  ZL =   1.000000000,
+ &END
+ &NLIST01
+  vis          = 1.0e-3,
+  vis_dif      = 1.0e-4,
+  grav         = 1.0d0,
+  gamma        = 1.666666666d0
+  c_h          = 0.2d0,
+  c_p          = 0.1d0,
+  CFL          = 0.3e0,
+  TIME_CRI_T   = 3000.515625000d0,
+ &END
+ &NLIST02
+  NLOOP_INCMAX = 12000,
+  NLOOP_OUTPUT = 1200,
+ &END
+ &NLIST03
+  EPSX         = 0.0,
+  EPSY         = 0.0,
+  Z_FINE_GRID  = 0.0,
+  FRACTION_FINE_GRID = 1.00,
+ &END
+ &NLIST04
+  cfile_sysout       = 'SYSOUT',
+  cfile_run_number   = 'RUN_NUMBER',
+  cfile_coordinate_x = 'COORDINATE_x',
+  cfile_coordinate_y = 'COORDINATE_y',
+  cfile_coordinate_z = 'COORDINATE_z',
+  cfile_output_list  = 'OUTPUT',
+  cfile_time_list    = 'TIME_ENE',
+  cfile_2d_field     = 'B2D',
+  cfile_3d_field     = 'B3D',
+  cfile_restart      = 'B3D_RESTART',
+ &END
+ &NLIST05
+ nproc_x = 9,
+ nproc_y = 9,
+ &END
+ /
+

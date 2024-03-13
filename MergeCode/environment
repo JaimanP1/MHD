@@ -1,0 +1,4 @@
+module use /opt/site/easybuild/modules/all/Core
+module load GCC/9.3.0 OpenMPI/4.0.3
+make
+sbatch MHD_MERGE_SOLALAB.sh
