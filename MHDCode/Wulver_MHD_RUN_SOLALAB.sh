@@ -1,10 +1,10 @@
 #!/bin/bash -l
 # The above line must be first and must include the "-l"
 
-#SBATCH --job-name=pi_test.impi
-#SBATCH --output=pi_test.impi.%j.out # %j expands to slurm JobID
-#SBATCH --error=pi_test.impi.%j.err
-#SBATCH --nodes=1
+#SBATCH --job-name=mhd_run
+#SBATCH --output=mhd_run%j.out # %j expands to slurm JobID
+#SBATCH --error=mhd_run%j.err
+#SBATCH --ntasks=256
 #SBATCH --ntasks-per-node=128
 #SBATCH --qos=high_wangj
 
@@ -12,10 +12,10 @@
 #SBATCH --partition=general
 
 # Memory required; lower amount gets scheduling priority
-#SBATCH --mem-per-cpu=4000M 
+#SBATCH --mem-per-cpu=2G 
 
 # Time required in d-hh:mm:ss format; lower time gets scheduling priority
-#SBATCH --time=01:00:00
+#SBATCH --time=72:00:00
 
 # Purge and load the correct modules
 module purge > /dev/null 2>&1
