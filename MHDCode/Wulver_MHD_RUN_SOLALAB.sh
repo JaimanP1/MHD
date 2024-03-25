@@ -2,8 +2,8 @@
 # The above line must be first and must include the "-l"
 
 #SBATCH --job-name=mhd_run
-#SBATCH --output=mhd_run%j.out # %j expands to slurm JobID
-#SBATCH --error=mhd_run%j.err
+#SBATCH --output=Out_files/mhd_run%j.out # %j expands to slurm JobID
+#SBATCH --error=Err_files/mhd_run%j.err
 #SBATCH --ntasks=256
 #SBATCH --ntasks-per-node=128
 #SBATCH --qos=high_wangj
@@ -21,7 +21,7 @@
 module purge > /dev/null 2>&1
 module use /opt/site/easybuild/modules/all/Core
 module load wulver
-module load intel/2022b
+module load foss/2022b
 make
 
 # Run the mpi program
