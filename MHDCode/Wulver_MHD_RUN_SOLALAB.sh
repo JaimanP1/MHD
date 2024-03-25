@@ -19,11 +19,11 @@
 
 # Purge and load the correct modules
 module purge > /dev/null 2>&1
+module use /opt/site/easybuild/modules/all/Core
 module load wulver
 module load intel/2022b
-
-mpiifort -o pi.impi pi.f
+make
 
 # Run the mpi program
-srun pi.impi
+srun mhd_run
 
