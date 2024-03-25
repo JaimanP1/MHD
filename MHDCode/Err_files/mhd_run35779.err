@@ -1,0 +1,729 @@
+flatpak: symbol lookup error: /lib64/libarchive.so.13: undefined symbol: lzma_cputhreads, version XZ_5.2
+[n0119:3212540] *** An error occurred in MPI_Comm_size
+[n0119:3212540] *** reported by process [1495278005,176]
+[n0119:3212540] *** on communicator MPI_COMM_WORLD
+[n0119:3212540] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212540] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212540] ***    and potentially your MPI job)
+[n0117:3220868] *** An error occurred in MPI_Comm_size
+[n0117:3220868] *** reported by process [1495278005,77]
+[n0117:3220868] *** on communicator MPI_COMM_WORLD
+[n0117:3220868] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220868] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220868] ***    and potentially your MPI job)
+[n0119:3212564] *** An error occurred in MPI_Comm_size
+[n0119:3212564] *** reported by process [1495278005,200]
+[n0119:3212564] *** on communicator MPI_COMM_WORLD
+[n0119:3212564] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212564] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212564] ***    and potentially your MPI job)
+[n0119:3212572] *** An error occurred in MPI_Comm_size
+[n0119:3212572] *** reported by process [1495278005,208]
+[n0119:3212572] *** on communicator MPI_COMM_WORLD
+[n0119:3212572] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212572] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212572] ***    and potentially your MPI job)
+[n0119:3212612] *** An error occurred in MPI_Comm_size
+[n0119:3212612] *** reported by process [1495278005,248]
+[n0119:3212612] *** on communicator MPI_COMM_WORLD
+[n0119:3212612] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212612] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212612] ***    and potentially your MPI job)
+[n0119:3212580] *** An error occurred in MPI_Comm_size
+[n0119:3212580] *** reported by process [1495278005,216]
+[n0119:3212580] *** on communicator MPI_COMM_WORLD
+[n0119:3212580] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212580] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212580] ***    and potentially your MPI job)
+[n0119:3212547] *** An error occurred in MPI_Comm_size
+[n0119:3212547] *** reported by process [1495278005,183]
+[n0119:3212547] *** on communicator MPI_COMM_WORLD
+[n0119:3212547] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212547] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212547] ***    and potentially your MPI job)
+[n0119:3212498] *** An error occurred in MPI_Comm_size
+[n0119:3212498] *** reported by process [1495278005,134]
+[n0119:3212498] *** on communicator MPI_COMM_WORLD
+[n0119:3212498] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212498] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212498] ***    and potentially your MPI job)
+[n0119:3212542] *** An error occurred in MPI_Comm_size
+[n0119:3212542] *** reported by process [1495278005,178]
+[n0119:3212542] *** on communicator MPI_COMM_WORLD
+[n0119:3212542] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212542] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212542] ***    and potentially your MPI job)
+[n0119:3212601] *** An error occurred in MPI_Comm_size
+[n0119:3212601] *** reported by process [1495278005,237]
+[n0119:3212601] *** on communicator MPI_COMM_WORLD
+[n0119:3212601] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212601] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212601] ***    and potentially your MPI job)
+[n0119:3212511] *** An error occurred in MPI_Comm_size
+[n0119:3212511] *** reported by process [1495278005,147]
+[n0119:3212511] *** on communicator MPI_COMM_WORLD
+[n0119:3212511] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212511] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212511] ***    and potentially your MPI job)
+[n0119:3212533] *** An error occurred in MPI_Comm_size
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[n0119:3212533] *** reported by process [1495278005,169]
+[n0119:3212533] *** on communicator MPI_COMM_WORLD
+[n0119:3212533] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212533] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212533] ***    and potentially your MPI job)
+[n0119:3212494] *** An error occurred in MPI_Comm_size
+[n0119:3212494] *** reported by process [1495278005,130]
+[n0119:3212494] *** on communicator MPI_COMM_WORLD
+[n0119:3212494] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212494] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212494] ***    and potentially your MPI job)
+[n0119:3212527] *** An error occurred in MPI_Comm_size
+[n0119:3212527] *** reported by process [1495278005,163]
+[n0119:3212527] *** on communicator MPI_COMM_WORLD
+[n0119:3212527] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212527] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212527] ***    and potentially your MPI job)
+[n0119:3212616] *** An error occurred in MPI_Comm_size
+[n0119:3212616] *** reported by process [1495278005,252]
+[n0119:3212616] *** on communicator MPI_COMM_WORLD
+[n0119:3212616] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212616] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212616] ***    and potentially your MPI job)
+[n0119:3212574] *** An error occurred in MPI_Comm_size
+[n0119:3212574] *** reported by process [1495278005,210]
+[n0119:3212574] *** on communicator MPI_COMM_WORLD
+[n0119:3212574] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212574] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212574] ***    and potentially your MPI job)
+[n0119:3212595] *** An error occurred in MPI_Comm_size
+[n0119:3212595] *** reported by process [1495278005,231]
+[n0119:3212595] *** on communicator MPI_COMM_WORLD
+[n0119:3212595] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212595] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212595] ***    and potentially your MPI job)
+[n0119:3212550] *** An error occurred in MPI_Comm_size
+[n0119:3212550] *** reported by process [1495278005,186]
+[n0119:3212550] *** on communicator MPI_COMM_WORLD
+[n0119:3212550] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212550] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212550] ***    and potentially your MPI job)
+[n0119:3212591] *** An error occurred in MPI_Comm_size
+[n0119:3212591] *** reported by process [1495278005,227]
+[n0119:3212591] *** on communicator MPI_COMM_WORLD
+[n0119:3212591] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212591] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212591] ***    and potentially your MPI job)
+[n0119:3212578] *** An error occurred in MPI_Comm_size
+[n0119:3212578] *** reported by process [1495278005,214]
+[n0119:3212578] *** on communicator MPI_COMM_WORLD
+[n0119:3212578] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212578] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212578] ***    and potentially your MPI job)
+[n0119:3212513] *** An error occurred in MPI_Comm_size
+[n0119:3212513] *** reported by process [1495278005,149]
+[n0119:3212513] *** on communicator MPI_COMM_WORLD
+[n0119:3212513] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212513] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212513] ***    and potentially your MPI job)
+[n0119:3212544] *** An error occurred in MPI_Comm_size
+[n0119:3212544] *** reported by process [1495278005,180]
+[n0119:3212544] *** on communicator MPI_COMM_WORLD
+[n0119:3212544] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212544] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212544] ***    and potentially your MPI job)
+[n0119:3212551] *** An error occurred in MPI_Comm_size
+[n0119:3212551] *** reported by process [1495278005,187]
+[n0119:3212551] *** on communicator MPI_COMM_WORLD
+[n0119:3212551] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212551] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212551] ***    and potentially your MPI job)
+[n0119:3212549] *** An error occurred in MPI_Comm_size
+[n0119:3212549] *** reported by process [1495278005,185]
+[n0119:3212549] *** on communicator MPI_COMM_WORLD
+[n0119:3212549] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212549] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212549] ***    and potentially your MPI job)
+[n0119:3212517] *** An error occurred in MPI_Comm_size
+[n0119:3212517] *** reported by process [1495278005,153]
+[n0119:3212517] *** on communicator MPI_COMM_WORLD
+[n0119:3212517] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212517] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212517] ***    and potentially your MPI job)
+[n0119:3212525] *** An error occurred in MPI_Comm_size
+[n0119:3212525] *** reported by process [1495278005,161]
+[n0119:3212525] *** on communicator MPI_COMM_WORLD
+[n0119:3212525] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212525] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212525] ***    and potentially your MPI job)
+[n0119:3212567] *** An error occurred in MPI_Comm_size
+[n0119:3212567] *** reported by process [1495278005,203]
+[n0119:3212567] *** on communicator MPI_COMM_WORLD
+[n0119:3212567] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212567] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212567] ***    and potentially your MPI job)
+[n0119:3212569] *** An error occurred in MPI_Comm_size
+[n0119:3212569] *** reported by process [1495278005,205]
+[n0119:3212569] *** on communicator MPI_COMM_WORLD
+[n0119:3212569] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212569] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212569] ***    and potentially your MPI job)
+[n0119:3212509] *** An error occurred in MPI_Comm_size
+[n0119:3212509] *** reported by process [1495278005,145]
+[n0119:3212509] *** on communicator MPI_COMM_WORLD
+[n0119:3212509] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212509] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212509] ***    and potentially your MPI job)
+[n0119:3212553] *** An error occurred in MPI_Comm_size
+[n0119:3212553] *** reported by process [1495278005,189]
+[n0119:3212553] *** on communicator MPI_COMM_WORLD
+[n0119:3212553] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212553] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212553] ***    and potentially your MPI job)
+[n0119:3212560] *** An error occurred in MPI_Comm_size
+[n0119:3212560] *** reported by process [1495278005,196]
+[n0119:3212560] *** on communicator MPI_COMM_WORLD
+[n0119:3212560] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212560] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212560] ***    and potentially your MPI job)
+[n0119:3212593] *** An error occurred in MPI_Comm_size
+[n0119:3212593] *** reported by process [1495278005,229]
+[n0119:3212593] *** on communicator MPI_COMM_WORLD
+[n0119:3212593] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212593] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212593] ***    and potentially your MPI job)
+[n0119:3212607] *** An error occurred in MPI_Comm_size
+[n0119:3212607] *** reported by process [1495278005,243]
+[n0119:3212607] *** on communicator MPI_COMM_WORLD
+[n0119:3212607] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212607] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212607] ***    and potentially your MPI job)
+[n0119:3212502] *** An error occurred in MPI_Comm_size
+[n0119:3212502] *** reported by process [1495278005,138]
+[n0119:3212502] *** on communicator MPI_COMM_WORLD
+[n0119:3212502] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212502] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212502] ***    and potentially your MPI job)
+[n0119:3212543] *** An error occurred in MPI_Comm_size
+[n0119:3212543] *** reported by process [1495278005,179]
+[n0119:3212543] *** on communicator MPI_COMM_WORLD
+[n0119:3212543] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212543] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212543] ***    and potentially your MPI job)
+[n0119:3212548] *** An error occurred in MPI_Comm_size
+[n0119:3212548] *** reported by process [1495278005,184]
+[n0119:3212548] *** on communicator MPI_COMM_WORLD
+[n0119:3212548] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212548] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212548] ***    and potentially your MPI job)
+[n0119:3212556] *** An error occurred in MPI_Comm_size
+[n0119:3212556] *** reported by process [1495278005,192]
+[n0119:3212556] *** on communicator MPI_COMM_WORLD
+[n0119:3212556] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212556] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212556] ***    and potentially your MPI job)
+[n0119:3212568] *** An error occurred in MPI_Comm_size
+[n0119:3212568] *** reported by process [1495278005,204]
+[n0119:3212568] *** on communicator MPI_COMM_WORLD
+[n0119:3212568] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212568] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212568] ***    and potentially your MPI job)
+[n0119:3212604] *** An error occurred in MPI_Comm_size
+[n0119:3212604] *** reported by process [1495278005,240]
+[n0119:3212604] *** on communicator MPI_COMM_WORLD
+[n0119:3212604] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212604] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212604] ***    and potentially your MPI job)
+[n0119:3212519] *** An error occurred in MPI_Comm_size
+[n0119:3212519] *** reported by process [1495278005,155]
+[n0119:3212519] *** on communicator MPI_COMM_WORLD
+[n0119:3212519] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212519] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212519] ***    and potentially your MPI job)
+[n0119:3212613] *** An error occurred in MPI_Comm_size
+[n0119:3212613] *** reported by process [1495278005,249]
+[n0119:3212613] *** on communicator MPI_COMM_WORLD
+[n0119:3212613] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212613] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212613] ***    and potentially your MPI job)
+[n0119:3212618] *** An error occurred in MPI_Comm_size
+[n0119:3212618] *** reported by process [1495278005,254]
+[n0119:3212618] *** on communicator MPI_COMM_WORLD
+[n0119:3212618] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212618] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212618] ***    and potentially your MPI job)
+[n0119:3212606] *** An error occurred in MPI_Comm_size
+[n0119:3212606] *** reported by process [1495278005,242]
+[n0119:3212606] *** on communicator MPI_COMM_WORLD
+[n0119:3212606] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212606] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212606] ***    and potentially your MPI job)
+[n0119:3212503] *** An error occurred in MPI_Comm_size
+[n0119:3212503] *** reported by process [1495278005,139]
+[n0119:3212503] *** on communicator MPI_COMM_WORLD
+[n0119:3212503] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212503] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212503] ***    and potentially your MPI job)
+[n0119:3212619] *** An error occurred in MPI_Comm_size
+[n0119:3212619] *** reported by process [1495278005,255]
+[n0119:3212619] *** on communicator MPI_COMM_WORLD
+[n0119:3212619] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212619] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212619] ***    and potentially your MPI job)
+[n0119:3212594] *** An error occurred in MPI_Comm_size
+[n0119:3212594] *** reported by process [1495278005,230]
+[n0119:3212594] *** on communicator MPI_COMM_WORLD
+[n0119:3212594] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212594] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212594] ***    and potentially your MPI job)
+[n0119:3212610] *** An error occurred in MPI_Comm_size
+[n0119:3212610] *** reported by process [1495278005,246]
+[n0119:3212610] *** on communicator MPI_COMM_WORLD
+[n0119:3212610] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212610] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212610] ***    and potentially your MPI job)
+[n0119:3212592] *** An error occurred in MPI_Comm_size
+[n0119:3212592] *** reported by process [1495278005,228]
+[n0119:3212592] *** on communicator MPI_COMM_WORLD
+[n0119:3212592] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212592] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212592] ***    and potentially your MPI job)
+[n0119:3212600] *** An error occurred in MPI_Comm_size
+[n0119:3212600] *** reported by process [1495278005,236]
+[n0119:3212600] *** on communicator MPI_COMM_WORLD
+[n0119:3212600] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212600] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212600] ***    and potentially your MPI job)
+[n0119:3212516] *** An error occurred in MPI_Comm_size
+[n0119:3212516] *** reported by process [1495278005,152]
+[n0119:3212516] *** on communicator MPI_COMM_WORLD
+[n0119:3212516] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212516] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212516] ***    and potentially your MPI job)
+[n0119:3212608] *** An error occurred in MPI_Comm_size
+[n0119:3212608] *** reported by process [1495278005,244]
+[n0119:3212608] *** on communicator MPI_COMM_WORLD
+[n0119:3212608] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212608] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212608] ***    and potentially your MPI job)
+[n0119:3212563] *** An error occurred in MPI_Comm_size
+[n0119:3212563] *** reported by process [1495278005,199]
+[n0119:3212563] *** on communicator MPI_COMM_WORLD
+[n0119:3212563] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212563] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212563] ***    and potentially your MPI job)
+[n0119:3212602] *** An error occurred in MPI_Comm_size
+[n0119:3212602] *** reported by process [1495278005,238]
+[n0119:3212602] *** on communicator MPI_COMM_WORLD
+[n0119:3212602] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212602] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212602] ***    and potentially your MPI job)
+[n0119:3212510] *** An error occurred in MPI_Comm_size
+[n0119:3212510] *** reported by process [1495278005,146]
+[n0119:3212510] *** on communicator MPI_COMM_WORLD
+[n0119:3212510] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212510] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212510] ***    and potentially your MPI job)
+[n0119:3212586] *** An error occurred in MPI_Comm_size
+[n0119:3212586] *** reported by process [1495278005,222]
+[n0119:3212586] *** on communicator MPI_COMM_WORLD
+[n0119:3212586] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212586] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212586] ***    and potentially your MPI job)
+[n0119:3212615] *** An error occurred in MPI_Comm_size
+[n0119:3212615] *** reported by process [1495278005,251]
+[n0119:3212615] *** on communicator MPI_COMM_WORLD
+[n0119:3212615] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212615] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212615] ***    and potentially your MPI job)
+[n0119:3212609] *** An error occurred in MPI_Comm_size
+[n0119:3212609] *** reported by process [1495278005,245]
+[n0119:3212609] *** on communicator MPI_COMM_WORLD
+[n0119:3212609] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212609] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212609] ***    and potentially your MPI job)
+[n0119:3212611] *** An error occurred in MPI_Comm_size
+[n0119:3212611] *** reported by process [1495278005,247]
+[n0119:3212611] *** on communicator MPI_COMM_WORLD
+[n0119:3212611] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212611] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212611] ***    and potentially your MPI job)
+[n0119:3212585] *** An error occurred in MPI_Comm_size
+[n0119:3212585] *** reported by process [1495278005,221]
+[n0119:3212585] *** on communicator MPI_COMM_WORLD
+[n0119:3212585] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212585] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212585] ***    and potentially your MPI job)
+[n0119:3212579] *** An error occurred in MPI_Comm_size
+[n0119:3212579] *** reported by process [1495278005,215]
+[n0119:3212579] *** on communicator MPI_COMM_WORLD
+[n0119:3212579] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212579] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212579] ***    and potentially your MPI job)
+[n0119:3212597] *** An error occurred in MPI_Comm_size
+[n0119:3212597] *** reported by process [1495278005,233]
+[n0119:3212597] *** on communicator MPI_COMM_WORLD
+[n0119:3212597] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212597] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212597] ***    and potentially your MPI job)
+[n0119:3212582] *** An error occurred in MPI_Comm_size
+[n0119:3212582] *** reported by process [1495278005,218]
+[n0119:3212582] *** on communicator MPI_COMM_WORLD
+[n0119:3212582] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212582] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212582] ***    and potentially your MPI job)
+[n0119:3212617] *** An error occurred in MPI_Comm_size
+[n0119:3212617] *** reported by process [1495278005,253]
+[n0119:3212617] *** on communicator MPI_COMM_WORLD
+[n0119:3212617] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212617] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212617] ***    and potentially your MPI job)
+[n0117:3220897] *** An error occurred in MPI_Comm_size
+[n0117:3220897] *** reported by process [1495278005,106]
+[n0117:3220897] *** on communicator MPI_COMM_WORLD
+[n0117:3220897] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220897] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220897] ***    and potentially your MPI job)
+[n0117:3220915] *** An error occurred in MPI_Comm_size
+[n0117:3220915] *** reported by process [1495278005,124]
+[n0117:3220915] *** on communicator MPI_COMM_WORLD
+[n0117:3220915] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220915] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220915] ***    and potentially your MPI job)
+[n0117:3220866] *** An error occurred in MPI_Comm_size
+[n0117:3220866] *** reported by process [1495278005,75]
+[n0117:3220866] *** on communicator MPI_COMM_WORLD
+[n0117:3220866] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220866] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220866] ***    and potentially your MPI job)
+[n0117:3220884] *** An error occurred in MPI_Comm_size
+[n0117:3220884] *** reported by process [1495278005,93]
+[n0117:3220884] *** on communicator MPI_COMM_WORLD
+[n0117:3220884] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220884] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220884] ***    and potentially your MPI job)
+[n0117:3220905] *** An error occurred in MPI_Comm_size
+[n0117:3220905] *** reported by process [1495278005,114]
+[n0117:3220905] *** on communicator MPI_COMM_WORLD
+[n0117:3220905] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220905] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220905] ***    and potentially your MPI job)
+[n0117:3220911] *** An error occurred in MPI_Comm_size
+[n0117:3220911] *** reported by process [1495278005,120]
+[n0117:3220911] *** on communicator MPI_COMM_WORLD
+[n0117:3220911] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220911] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220911] ***    and potentially your MPI job)
+[n0117:3220872] *** An error occurred in MPI_Comm_size
+[n0117:3220872] *** reported by process [1495278005,81]
+[n0117:3220872] *** on communicator MPI_COMM_WORLD
+[n0117:3220872] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220872] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220872] ***    and potentially your MPI job)
+[n0117:3220918] *** An error occurred in MPI_Comm_size
+[n0117:3220918] *** reported by process [1495278005,127]
+[n0117:3220918] *** on communicator MPI_COMM_WORLD
+[n0117:3220918] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220918] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220918] ***    and potentially your MPI job)
+[n0117:3220907] *** An error occurred in MPI_Comm_size
+[n0117:3220907] *** reported by process [1495278005,116]
+[n0117:3220907] *** on communicator MPI_COMM_WORLD
+[n0117:3220907] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220907] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220907] ***    and potentially your MPI job)
+[n0117:3220891] *** An error occurred in MPI_Comm_size
+[n0117:3220891] *** reported by process [1495278005,100]
+[n0117:3220891] *** on communicator MPI_COMM_WORLD
+[n0117:3220891] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220891] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220891] ***    and potentially your MPI job)
+[n0117:3220887] *** An error occurred in MPI_Comm_size
+[n0117:3220887] *** reported by process [1495278005,96]
+[n0117:3220887] *** on communicator MPI_COMM_WORLD
+[n0117:3220887] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220887] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220887] ***    and potentially your MPI job)
+[n0117:3220879] *** An error occurred in MPI_Comm_size
+[n0117:3220879] *** reported by process [1495278005,88]
+[n0117:3220879] *** on communicator MPI_COMM_WORLD
+[n0117:3220879] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220879] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220879] ***    and potentially your MPI job)
+[n0117:3220886] *** An error occurred in MPI_Comm_size
+[n0117:3220886] *** reported by process [1495278005,95]
+[n0117:3220886] *** on communicator MPI_COMM_WORLD
+[n0117:3220886] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220886] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220886] ***    and potentially your MPI job)
+[n0117:3220876] *** An error occurred in MPI_Comm_size
+[n0117:3220876] *** reported by process [1495278005,85]
+[n0117:3220876] *** on communicator MPI_COMM_WORLD
+[n0117:3220876] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220876] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220876] ***    and potentially your MPI job)
+[n0117:3220867] *** An error occurred in MPI_Comm_size
+[n0117:3220867] *** reported by process [1495278005,76]
+[n0117:3220867] *** on communicator MPI_COMM_WORLD
+[n0117:3220867] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220867] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220867] ***    and potentially your MPI job)
+[n0117:3220914] *** An error occurred in MPI_Comm_size
+[n0117:3220914] *** reported by process [1495278005,123]
+[n0117:3220914] *** on communicator MPI_COMM_WORLD
+[n0117:3220914] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220914] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220914] ***    and potentially your MPI job)
+[n0117:3220895] *** An error occurred in MPI_Comm_size
+[n0117:3220895] *** reported by process [1495278005,104]
+[n0117:3220895] *** on communicator MPI_COMM_WORLD
+[n0117:3220895] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220895] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220895] ***    and potentially your MPI job)
+[n0117:3220899] *** An error occurred in MPI_Comm_size
+[n0117:3220899] *** reported by process [1495278005,108]
+[n0117:3220899] *** on communicator MPI_COMM_WORLD
+[n0117:3220899] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220899] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220899] ***    and potentially your MPI job)
+[n0117:3220890] *** An error occurred in MPI_Comm_size
+[n0117:3220890] *** reported by process [1495278005,99]
+[n0117:3220890] *** on communicator MPI_COMM_WORLD
+[n0117:3220890] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220890] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220890] ***    and potentially your MPI job)
+[n0117:3220904] *** An error occurred in MPI_Comm_size
+[n0117:3220904] *** reported by process [1495278005,113]
+[n0117:3220904] *** on communicator MPI_COMM_WORLD
+[n0117:3220904] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220904] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220904] ***    and potentially your MPI job)
+[n0117:3220865] *** An error occurred in MPI_Comm_size
+[n0117:3220865] *** reported by process [1495278005,74]
+[n0117:3220865] *** on communicator MPI_COMM_WORLD
+[n0117:3220865] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220865] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220865] ***    and potentially your MPI job)
+[n0117:3220870] *** An error occurred in MPI_Comm_size
+[n0117:3220870] *** reported by process [1495278005,79]
+[n0117:3220870] *** on communicator MPI_COMM_WORLD
+[n0117:3220870] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220870] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220870] ***    and potentially your MPI job)
+[n0117:3220917] *** An error occurred in MPI_Comm_size
+[n0117:3220917] *** reported by process [1495278005,126]
+[n0117:3220917] *** on communicator MPI_COMM_WORLD
+[n0117:3220917] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220917] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220917] ***    and potentially your MPI job)
+[n0117:3220906] *** An error occurred in MPI_Comm_size
+[n0117:3220906] *** reported by process [1495278005,115]
+[n0117:3220906] *** on communicator MPI_COMM_WORLD
+[n0117:3220906] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220906] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220906] ***    and potentially your MPI job)
+[n0117:3220878] *** An error occurred in MPI_Comm_size
+[n0117:3220878] *** reported by process [1495278005,87]
+[n0117:3220878] *** on communicator MPI_COMM_WORLD
+[n0117:3220878] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220878] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220878] ***    and potentially your MPI job)
+[n0117:3220909] *** An error occurred in MPI_Comm_size
+[n0117:3220909] *** reported by process [1495278005,118]
+[n0117:3220909] *** on communicator MPI_COMM_WORLD
+[n0117:3220909] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220909] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220909] ***    and potentially your MPI job)
+[n0117:3220869] *** An error occurred in MPI_Comm_size
+[n0117:3220869] *** reported by process [1495278005,78]
+[n0117:3220869] *** on communicator MPI_COMM_WORLD
+[n0117:3220869] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220869] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220869] ***    and potentially your MPI job)
+[n0117:3220864] *** An error occurred in MPI_Comm_size
+[n0117:3220864] *** reported by process [1495278005,73]
+[n0117:3220864] *** on communicator MPI_COMM_WORLD
+[n0117:3220864] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220864] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220864] ***    and potentially your MPI job)
+[n0117:3220880] *** An error occurred in MPI_Comm_size
+[n0117:3220880] *** reported by process [1495278005,89]
+[n0117:3220880] *** on communicator MPI_COMM_WORLD
+[n0117:3220880] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220880] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220880] ***    and potentially your MPI job)
+[n0117:3220881] *** An error occurred in MPI_Comm_size
+[n0117:3220881] *** reported by process [1495278005,90]
+[n0117:3220881] *** on communicator MPI_COMM_WORLD
+[n0117:3220881] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220881] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220881] ***    and potentially your MPI job)
+[n0117:3220898] *** An error occurred in MPI_Comm_size
+[n0117:3220898] *** reported by process [1495278005,107]
+[n0117:3220898] *** on communicator MPI_COMM_WORLD
+[n0117:3220898] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220898] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220898] ***    and potentially your MPI job)
+[n0117:3220902] *** An error occurred in MPI_Comm_size
+[n0117:3220902] *** reported by process [1495278005,111]
+[n0117:3220902] *** on communicator MPI_COMM_WORLD
+[n0117:3220902] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220902] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220902] ***    and potentially your MPI job)
+[n0117:3220903] *** An error occurred in MPI_Comm_size
+[n0117:3220903] *** reported by process [1495278005,112]
+[n0117:3220903] *** on communicator MPI_COMM_WORLD
+[n0117:3220903] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220903] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220903] ***    and potentially your MPI job)
+[n0117:3220894] *** An error occurred in MPI_Comm_size
+[n0117:3220894] *** reported by process [1495278005,103]
+[n0117:3220894] *** on communicator MPI_COMM_WORLD
+[n0117:3220894] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220894] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220894] ***    and potentially your MPI job)
+[n0117:3220908] *** An error occurred in MPI_Comm_size
+[n0117:3220908] *** reported by process [1495278005,117]
+[n0117:3220908] *** on communicator MPI_COMM_WORLD
+[n0117:3220908] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220908] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220908] ***    and potentially your MPI job)
+[n0117:3220871] *** An error occurred in MPI_Comm_size
+[n0117:3220871] *** reported by process [1495278005,80]
+[n0117:3220871] *** on communicator MPI_COMM_WORLD
+[n0117:3220871] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220871] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220871] ***    and potentially your MPI job)
+[n0117:3220900] *** An error occurred in MPI_Comm_size
+[n0117:3220900] *** reported by process [1495278005,109]
+[n0117:3220900] *** on communicator MPI_COMM_WORLD
+[n0117:3220900] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220900] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220900] ***    and potentially your MPI job)
+[n0117:3220882] *** An error occurred in MPI_Comm_size
+[n0117:3220882] *** reported by process [1495278005,91]
+[n0117:3220882] *** on communicator MPI_COMM_WORLD
+[n0117:3220882] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220882] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220882] ***    and potentially your MPI job)
+[n0117:3220896] *** An error occurred in MPI_Comm_size
+[n0117:3220896] *** reported by process [1495278005,105]
+[n0117:3220896] *** on communicator MPI_COMM_WORLD
+[n0117:3220896] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220896] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220896] ***    and potentially your MPI job)
+[n0117:3220893] *** An error occurred in MPI_Comm_size
+[n0117:3220893] *** reported by process [1495278005,102]
+[n0117:3220893] *** on communicator MPI_COMM_WORLD
+[n0117:3220893] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220893] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220893] ***    and potentially your MPI job)
+[n0117:3220883] *** An error occurred in MPI_Comm_size
+[n0117:3220883] *** reported by process [1495278005,92]
+[n0117:3220883] *** on communicator MPI_COMM_WORLD
+[n0117:3220883] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220883] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220883] ***    and potentially your MPI job)
+[n0117:3220885] *** An error occurred in MPI_Comm_size
+[n0117:3220885] *** reported by process [1495278005,94]
+[n0117:3220885] *** on communicator MPI_COMM_WORLD
+[n0117:3220885] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220885] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220885] ***    and potentially your MPI job)
+[n0117:3220874] *** An error occurred in MPI_Comm_size
+[n0117:3220874] *** reported by process [1495278005,83]
+[n0117:3220874] *** on communicator MPI_COMM_WORLD
+[n0117:3220874] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220874] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220874] ***    and potentially your MPI job)
+[n0117:3220873] *** An error occurred in MPI_Comm_size
+[n0117:3220873] *** reported by process [1495278005,82]
+[n0117:3220873] *** on communicator MPI_COMM_WORLD
+[n0117:3220873] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220873] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220873] ***    and potentially your MPI job)
+[n0117:3220901] *** An error occurred in MPI_Comm_size
+[n0117:3220901] *** reported by process [1495278005,110]
+[n0117:3220901] *** on communicator MPI_COMM_WORLD
+[n0117:3220901] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220901] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220901] ***    and potentially your MPI job)
+[n0117:3220916] *** An error occurred in MPI_Comm_size
+[n0117:3220916] *** reported by process [1495278005,125]
+[n0117:3220916] *** on communicator MPI_COMM_WORLD
+[n0117:3220916] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220916] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220916] ***    and potentially your MPI job)
+[n0117:3220889] *** An error occurred in MPI_Comm_size
+[n0117:3220889] *** reported by process [1495278005,98]
+[n0117:3220889] *** on communicator MPI_COMM_WORLD
+[n0117:3220889] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220889] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220889] ***    and potentially your MPI job)
+[n0117:3220910] *** An error occurred in MPI_Comm_size
+[n0117:3220910] *** reported by process [1495278005,119]
+[n0117:3220910] *** on communicator MPI_COMM_WORLD
+[n0117:3220910] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220910] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220910] ***    and potentially your MPI job)
+[n0117:3220875] *** An error occurred in MPI_Comm_size
+[n0117:3220875] *** reported by process [1495278005,84]
+[n0117:3220875] *** on communicator MPI_COMM_WORLD
+[n0117:3220875] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220875] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220875] ***    and potentially your MPI job)
+[n0117:3220912] *** An error occurred in MPI_Comm_size
+[n0117:3220912] *** reported by process [1495278005,121]
+[n0117:3220912] *** on communicator MPI_COMM_WORLD
+[n0117:3220912] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220912] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220912] ***    and potentially your MPI job)
+[n0117:3220892] *** An error occurred in MPI_Comm_size
+[n0117:3220892] *** reported by process [1495278005,101]
+[n0117:3220892] *** on communicator MPI_COMM_WORLD
+[n0117:3220892] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220892] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220892] ***    and potentially your MPI job)
+[n0117:3220877] *** An error occurred in MPI_Comm_size
+[n0117:3220877] *** reported by process [1495278005,86]
+[n0117:3220877] *** on communicator MPI_COMM_WORLD
+[n0117:3220877] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220877] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220877] ***    and potentially your MPI job)
+[n0117:3220863] *** An error occurred in MPI_Comm_size
+[n0117:3220863] *** reported by process [1495278005,72]
+[n0117:3220863] *** on communicator MPI_COMM_WORLD
+[n0117:3220863] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220863] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220863] ***    and potentially your MPI job)
+[n0117:3220888] *** An error occurred in MPI_Comm_size
+[n0117:3220888] *** reported by process [1495278005,97]
+[n0117:3220888] *** on communicator MPI_COMM_WORLD
+[n0117:3220888] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220888] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220888] ***    and potentially your MPI job)
+[n0117:3220913] *** An error occurred in MPI_Comm_size
+[n0117:3220913] *** reported by process [1495278005,122]
+[n0117:3220913] *** on communicator MPI_COMM_WORLD
+[n0117:3220913] *** MPI_ERR_COMM: invalid communicator
+[n0117:3220913] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0117:3220913] ***    and potentially your MPI job)
+slurmstepd: error: *** STEP 35779.0 ON n0117 CANCELLED AT 2024-03-25T00:34:58 ***
+slurmstepd: error: *** STEP 35779.0 ON n0117 CANCELLED AT 2024-03-25T00:34:58 ***
+[n0119:3212584] *** An error occurred in MPI_Comm_size
+[n0119:3212584] *** reported by process [1495278005,220]
+[n0119:3212584] *** on communicator MPI_COMM_WORLD
+[n0119:3212584] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212584] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212584] ***    and potentially your MPI job)
+[n0119:3212599] *** An error occurred in MPI_Comm_size
+[n0119:3212599] *** reported by process [1495278005,235]
+[n0119:3212599] *** on communicator MPI_COMM_WORLD
+[n0119:3212599] *** MPI_ERR_COMM: invalid communicator
+[n0119:3212599] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[n0119:3212599] ***    and potentially your MPI job)
+srun: error: n0119: tasks 130,134,192,196,199-201,203: Killed
+srun: error: n0119: task 248: Exited with exit code 5
+srun: error: n0119: tasks 128-129,131-133,135-191,193-195,197-198,202,204-247,249-255: Killed
+srun: error: n0117: tasks 0-76,78-127: Killed
+srun: error: n0117: task 77: Exited with exit code 5

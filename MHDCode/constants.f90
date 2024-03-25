@@ -5,8 +5,8 @@
   implicit none
 
 ! === grid number ===
-  integer, parameter :: NX=40
-  integer, parameter :: NY=45
+  integer, parameter :: NX=30
+  integer, parameter :: NY=30
   integer, parameter :: NZ=360
 
 ! === grid number for the whole domain ===
@@ -36,7 +36,7 @@
 ! I/O
 ! -------
  character(*),parameter :: dir   = '/project/wangj/node819/Jaiman/sp24TwistLong/M1_test4/DATA/'
- character(*),parameter :: dir_r = '/project/wangj/node819/Jaiman/inData/'
+ character(*),parameter :: dir_r = '/project/wangj/node819/Jaiman/sp24TwistLong/inData/'
 
 ! character(*),parameter :: dir_r  = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/POTE_DATA/320/'
 ! character(*),parameter :: dir    = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/MHD/DATA/EMF/'

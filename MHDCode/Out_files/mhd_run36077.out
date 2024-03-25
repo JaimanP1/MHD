@@ -1,0 +1,11 @@
+mpif90 -mcmodel=medium -c constants.f90
+mpif90 -mcmodel=medium -c common.f90
+mpif90 -mcmodel=medium -c mpiut.f90
+mpif90 -mcmodel=medium -c pset.f90
+mpif90 -mcmodel=medium -c mhd.f90
+mpif90 -mcmodel=medium -c job.f90
+mpif90 -mcmodel=medium -c iset.f90
+mpif90 -mcmodel=medium -c rkg.f90
+mpif90 -mcmodel=medium -c out.f90
+mpif90 -mcmodel=medium -c r2f.f90
+mpif90 -mcmodel=medium -o mhd_run main.f90 constants.o common.o mpiut.o pset.o mhd.o job.o iset.o rkg.o out.o r2f.o dcft2.o  
