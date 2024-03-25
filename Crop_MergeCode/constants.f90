@@ -8,13 +8,13 @@
   implicit none
 
 ! === processor number ===
-  integer, parameter :: N_PROC  = 72  ! number of the processors >= 1
-  integer, parameter :: N_PROC_X= 9
-  integer, parameter :: N_PROC_Y= 8
+  integer, parameter :: N_PROC  = 144  ! number of the processors >= 1
+  integer, parameter :: N_PROC_X= 12
+  integer, parameter :: N_PROC_Y= 12
 
 ! === grid number in a sub-domain ===
-  integer, parameter :: NX = 40
-  integer, parameter :: NY = 45
+  integer, parameter :: NX = 30
+  integer, parameter :: NY = 30
   integer, parameter :: NZ = 360
 
 ! === grid number in a whole-domain ===
@@ -59,9 +59,9 @@
   complex(DPC), parameter :: IUNIT = (0.0_DP, 1.0_DP)
 
 ! === READ & OUTPUT FOLDER ============
-  character(*) ,parameter :: dir_r = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/DATA/'
-  character(*) ,parameter :: dir   = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/VAPOR/merge/'
-  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/Jaiman/sp24TwistLong/M1_test4/VAPOR/'
+  character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/sp24TwistLong/M1_test4/DATA/'
+  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/sp24TwistLong/M1_test4/VAPOR/merge/'
+  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/sp24TwistLong/M1_test4/VAPOR/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file
