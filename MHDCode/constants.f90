@@ -5,7 +5,7 @@
   implicit none
 
 ! === grid number ===
-  integer, parameter :: NX=30
+  integer, parameter :: NX=24
   integer, parameter :: NY=30
   integer, parameter :: NZ=360
 

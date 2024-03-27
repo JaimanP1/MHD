@@ -4,8 +4,8 @@
 #SBATCH --job-name=mhd_run
 #SBATCH --output=Out_files/mhd_run%j.out # %j expands to slurm JobID
 #SBATCH --error=Err_files/mhd_run%j.err
-#SBATCH --ntasks=144
-#SBATCH --ntasks-per-node=72
+#SBATCH --ntasks=180
+#SBATCH --ntasks-per-node=90
 #SBATCH --qos=high_wangj
 
 # Use "sinfo" to see what partitions are available to you

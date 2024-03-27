@@ -15,7 +15,7 @@
  &END
  &NLIST02
   NLOOP_INCMAX = 12000,
-  NLOOP_OUTPUT = 2400,
+  NLOOP_OUTPUT = 1000,
  &END
  &NLIST03
   EPSX         = 0.0,
@@ -36,7 +36,7 @@
   cfile_restart      = 'B3D_RESTART',
  &END
  &NLIST05
- nproc_x = 12,
+ nproc_x = 15,
  nproc_y = 12,
  &END
  /
