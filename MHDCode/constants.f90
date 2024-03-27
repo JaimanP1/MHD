@@ -35,8 +35,8 @@
 ! -------
 ! I/O
 ! -------
- character(*),parameter :: dir   = '/project/wangj/node819/Jaiman/sp24TwistLong/M1_test4/DATA/'
- character(*),parameter :: dir_r = '/project/wangj/node819/Jaiman/sp24TwistLong/inData/'
+ character(*),parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test1/DATA/'
+ character(*),parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/inDATA/'
 
 ! character(*),parameter :: dir_r  = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/POTE_DATA/320/'
 ! character(*),parameter :: dir    = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/MHD/DATA/EMF/'

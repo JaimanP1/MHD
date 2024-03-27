@@ -12,7 +12,7 @@
 #SBATCH --partition=general
 
 # Memory required; lower amount gets scheduling priority
-#SBATCH --mem-per-cpu=2G 
+#SBATCH --mem-per-cpu=4G 
 
 # Time required in d-hh:mm:ss format; lower time gets scheduling priority
 #SBATCH --time=72:00:00
