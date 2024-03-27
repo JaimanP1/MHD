@@ -36,8 +36,8 @@
   cfile_restart      = 'B3D_RESTART',
  &END
  &NLIST05
- nproc_x = 9,
- nproc_y = 8,
+ nproc_x = 12,
+ nproc_y = 12,
  &END
  /
 

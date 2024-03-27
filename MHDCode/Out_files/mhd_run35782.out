@@ -1,0 +1,1 @@
+mpif90 -mcmodel=medium -o mhd_run main.f90 constants.o common.o mpiut.o pset.o mhd.o job.o iset.o rkg.o out.o r2f.o dcft2.o  

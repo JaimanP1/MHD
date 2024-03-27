@@ -1,11 +1,11 @@
 #!/bin/bash -l
 # The above line must be first and must include the "-l"
 
-#SBATCH --job-name=mhd_run
-#SBATCH --output=Out_files/mhd_run%j.out # %j expands to slurm JobID
-#SBATCH --error=Err_files/mhd_run%j.err
-#SBATCH --ntasks=144
-#SBATCH --ntasks-per-node=72
+#SBATCH --job-name=mhd_merge
+#SBATCH --output=Out_files/mhd_merge%j.out # %j expands to slurm JobID
+#SBATCH --error=Err_files/mhd_merge%j.err
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --qos=high_wangj
 
 # Use "sinfo" to see what partitions are available to you
@@ -25,5 +25,5 @@ module use /opt/site/easybuild/modules/all/Core
 make
 
 # Run the mpi program
-srun mhd_run
+srun mhd_merge
 
