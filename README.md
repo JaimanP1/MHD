@@ -6,3 +6,5 @@ This code outputs both binary and vdc data to generate Magnetic Flux ropes in qu
 This code is parallelized.
 
 Refer to Wiki page for more information (in progress)
+
+Currently working on implementing a RAM function in order to stop twisting motion at an earlier time.
