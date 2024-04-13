@@ -5,14 +5,15 @@
 #SBATCH --output=Out_files/mhd_merge%j.out # %j expands to slurm JobID
 #SBATCH --error=Err_files/mhd_merge%j.err
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=64
 #SBATCH --qos=high_wangj
+#SBATCH --partition=general
 
 # Use "sinfo" to see what partitions are available to you
 #SBATCH --partition=general
 
 # Memory required; lower amount gets scheduling priority
-#SBATCH --mem-per-cpu=2G 
+#SBATCH --mem-per-cpu=4G 
 
 # Time required in d-hh:mm:ss format; lower time gets scheduling priority
 #SBATCH --time=72:00:00
@@ -25,5 +26,5 @@ module use /opt/site/easybuild/modules/all/Core
 make
 
 # Run the mpi program
-srun mhd_merge
+srun MergeCode
 
