@@ -627,7 +627,7 @@
   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: bx_avs,  by_avs, bz_avs
   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: vx_avs,  vy_avs, vz_avs
   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: cx_avs,  cy_avs, cz_avs
-  real,    dimension(0:200, 0:200, 0:360)         :: bx_vp, by_vp, bz_vp,   &
+  real,    dimension(0:NX_ARR, 0:NY_ARR, 0:NZ_ARR)         :: bx_vp, by_vp, bz_vp,   &
                                                       vx_vp, vy_vp, vz_vp,   &
                                                       cz_vp, ct_vp, ro_vp,   &
                                                       ct_bt_vp, divv_vp,vt_vp

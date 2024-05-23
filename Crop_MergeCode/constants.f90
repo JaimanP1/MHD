@@ -33,12 +33,12 @@
   integer, parameter :: NZ_R=NZ_W/LEAPZ
 
 ! === AVS rearrange grid ===
-  integer, parameter :: NX_ARR = 200 !200  
-  integer, parameter :: NY_ARR = 200 !200  
+  integer, parameter :: NX_ARR = 360 !200  
+  integer, parameter :: NY_ARR = 360 !200  
   integer, parameter :: NZ_ARR = 360 !200  
 
-  integer, parameter :: NX_avs = 80 !50   !! Start point
-  integer, parameter :: NY_avs = 80 !50   !! Start Point
+  integer, parameter :: NX_avs = 0 !50   !! Start point
+  integer, parameter :: NY_avs = 0 !50   !! Start Point
 
 ! === sub-grid number ===
   integer, parameter :: nxm1=NX-1
@@ -60,8 +60,8 @@
 
 ! === READ & OUTPUT FOLDER ============
   character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/DATA/'
-  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/VAPOR/merge/'
-  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/VAPOR/'
+  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/VAPOR2/merge/'
+  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/VAPOR2/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file
