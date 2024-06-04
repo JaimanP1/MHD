@@ -59,9 +59,9 @@
   complex(DPC), parameter :: IUNIT = (0.0_DP, 1.0_DP)
 
 ! === READ & OUTPUT FOLDER ============
-  character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/DATA/'
-  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/VAPOR2/merge/'
-  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test3/VAPOR2/'
+  character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/DATA/'
+  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/VAPOR/Merge/'
+  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/VAPOR/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file
