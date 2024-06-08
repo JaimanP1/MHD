@@ -60,8 +60,8 @@
 
 ! === READ & OUTPUT FOLDER ============
   character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/DATA/'
-  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/VAPOR/Merge/'
-  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/VAPOR/'
+  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/VAPOR2/Merge/'
+  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/VAPOR2/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file

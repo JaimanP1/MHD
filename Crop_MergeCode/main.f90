@@ -4,6 +4,7 @@
 ! ==========================================================================
   use subroutines
   use ana
+  use common 
   character*3   :: cseries
   character*4   :: cproc
   character*100 :: filename
@@ -41,8 +42,9 @@
 ! ============================================================================
   write(cseries,'(i3.3)') series
   write(*,*) '## read file #',series
-!
-  do loop = 1,11
+
+  ! do loop = 1,11 previously
+  do loop = 1, (nloop_incmax / nloop_output) + 1
   write(cloop,'(i3.3)') loop
   write(6,*)cloop
 !
