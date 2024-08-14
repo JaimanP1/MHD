@@ -1,0 +1,70 @@
+mpif90 -c -mcmodel=large  constants.f90
+mpif90 -c -mcmodel=large  common.f90
+mpif90 -c -mcmodel=large  subroutines.f90
+mpif90 -c -mcmodel=large  ana.f90
+mpif90 -c -mcmodel=large  main.f90
+mpif90 -mcmodel=large  -o MergeCode main.o subroutines.o ana.o common.o constants.o
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
+ ##DEBUG## z_fine_grid, fraction_fine_grid   0.0000000000000000        1.0000000000000000     
