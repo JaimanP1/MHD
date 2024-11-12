@@ -302,8 +302,8 @@
 ! -----------------------------------------------------
 !         output coordinate file for sparse data
 ! -----------------------------------------------------
- 100  format(1e14.6)
-!  100  format(e25.16)
+! 100  format(1e14.6)
+ 100  format(1e25.16)
          open(FILE_COORD_R_X,file=dir//'coord.xgc',form='formatted')
          do i = 0, NX_R
             write(FILE_COORD_R_X,100) xc_w(i*LEAPX) 
@@ -596,8 +596,8 @@
  end do
  end do
 
- 100  format(1e14.6)
-!  100  format(e25.16)
+! 100  format(1e14.6)
+ 100  format(1e25.16)
          open(FILE_COORD_R_X,file=dir_a//'coord.xgc',form='formatted')
          do i = NX_avs, NX_avs + NX_ARR
             write(FILE_COORD_R_X,100) xc_w(i*LEAPX) 
@@ -627,7 +627,7 @@
   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: bx_avs,  by_avs, bz_avs
   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: vx_avs,  vy_avs, vz_avs
   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: cx_avs,  cy_avs, cz_avs
-  real,    dimension(0:NX_ARR, 0:NY_ARR, 0:NZ_ARR)         :: bx_vp, by_vp, bz_vp,   &
+  real(DP),dimension(0:NX_ARR, 0:NY_ARR, 0:NZ_ARR)         :: bx_vp, by_vp, bz_vp,   & !changed from real to real(DP)
                                                       vx_vp, vy_vp, vz_vp,   &
                                                       cz_vp, ct_vp, ro_vp,   &
                                                       ct_bt_vp, divv_vp,vt_vp
@@ -729,29 +729,31 @@
 !       write(FILE_AVS_FIELD,*) 'label=Jx'
 !       write(FILE_AVS_FIELD,*) 'label=Jy'
 !       write(FILE_AVS_FIELD,*) 'label=Jz'
-       write(FILE_AVS_FIELD,*) 'label=CB2'
-       write(FILE_AVS_FIELD,*) 'label=CT_BT'
-       write(FILE_AVS_FIELD,*) 'label=DIVV'
+!       write(FILE_AVS_FIELD,*) 'label=CB2'
+!       write(FILE_AVS_FIELD,*) 'label=CT_BT'
+!       write(FILE_AVS_FIELD,*) 'label=DIVV'
+
+100 format(1e25.16) !to correctly format the data
 
   filename = trim(cfile_3d_field)//'.'//cseries//'.BX.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 1 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) bx_vp
+       write(FILE_3D_SPARSE, 100) bx_vp !100 stands for label of format specifier
   close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.BY.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 2 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) by_vp
+       write(FILE_3D_SPARSE, 100) by_vp
   close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.BZ.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 3 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) bz_vp
+       write(FILE_3D_SPARSE, 100) bz_vp
   close(FILE_3D_SPARSE)
 !
 !  filename = trim(cfile_3d_field)//'.'//cseries//'.RO'//'.'//trim(cloop)
@@ -810,19 +812,19 @@
 !       write(FILE_3D_SPARSE) cz_r
 !  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
-  write(FILE_AVS_FIELD,*) &
-       'variable 6 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) ct_vp
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 6 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) ct_vp
+!  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 6 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) ct_bt_vp
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 6 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) ct_bt_vp
+!  close(FILE_3D_SPARSE)
 
 !  filename = trim(cfile_3d_field)//'.'//cseries//'.DIVV.R'//'.'//trim(cloop)
 !  write(FILE_AVS_FIELD,*) &

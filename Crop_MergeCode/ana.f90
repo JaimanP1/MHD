@@ -46,20 +46,20 @@
 ! -------------------------------------------------------------------------------  
 ! Height of MFR                  
 ! ------------------------------------------------------------------------------- 
-!  do k = 0,nz_r/2
-!    if(bx_r(nx_r/2,ny_r/2,k+1)*bx_r(nx_r/2,ny_r/2,k)<0) then
-!      zc_mfr = zc_r(k)
-!    endif
-!  enddo
+  do k = 4,nz_r-4 !changed from k=1,nz_r-2
+    if(bx_r(nx_r/2,ny_r/2,k+1)*bx_r(nx_r/2,ny_r/2,k)<0) then
+      zc_mfr = zc_r(k)
+    endif
+  enddo
 
-!  open(11,file = dir//'BX_1D.'//trim(cloop),form='formatted')
-!  do k=  0, nz_r
-!     write(11,*) k,bx_r(nx_r/2,ny_r/2,k)
-!  end do
-!  close(11)
+  open(11,file = dir//'BX_1D.'//trim(cloop),form='formatted')
+  do k=  0, nz_r
+     write(11,*) k,bx_r(nx_r/2,ny_r/2,k)
+  end do
+  close(11)
 
-!  open(91,file = dir//'TIME_MFR',form='formatted')
-!  write(91,*) atime, zc_mfr
+  open(91,file = dir//'TIME_MFR',form='formatted')
+  write(91,*) atime, zc_mfr
 
 ! ------------------------------------------------------------------------------  
 ! OUTPUT                                                                          
