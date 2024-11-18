@@ -59,9 +59,17 @@
   complex(DPC), parameter :: IUNIT = (0.0_DP, 1.0_DP)
 
 ! === READ & OUTPUT FOLDER ============
+!  character(*) ,parameter :: dir_r = '/cluster/solarlab/nobackup/nobackup/Huu/DATA/038/'
+!  character(*) ,parameter :: dir   = '/cluster/solarlab/nobackup/nobackup/Huu/OUT_DATA/'
+!  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/nobackup/Huu/OUT_DATA/VAPOR/'
+
+!  character(*) ,parameter :: dir_r = '/cluster/solarlab/nobackup/Huu/FALL_2023/DATA/DOUBLE_CHECK/MASTER/'
+!  character(*) ,parameter :: dir   = '/cluster/solarlab/nobackup/Huu/SPRING_2024/OUT_DATA/VAPOR/MASTER/'
+!  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/Huu/SPRING_2024/OUT_DATA/VAPOR/MASTER/VAPOR/'
+
   character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/DATA/'
-  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData3/Merge/'
-  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData3/'
+  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData4/'
+  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData4/Merge/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file
