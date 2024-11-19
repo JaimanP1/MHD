@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name="NLFFF MHD ANA MERGE420"
+#SBATCH --job-name="NLFFF MHD ANA PTRACE"
 #SBATCH --partition=general
 #SBATCH --account=wangj
-#SBATCH --qos=low
+#SBATCH --qos=high_wangj
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=48
@@ -14,6 +14,7 @@ make
 
 echo "Starting job at: "
 date
-srun ./MERGE
+srun ./bline
 echo "Finished"
 date
+

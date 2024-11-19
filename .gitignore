@@ -1,0 +1,7 @@
+*.o
+*.mod
+Err_files/
+Out_files/
+*.err
+*.out
+*.f90~

@@ -68,8 +68,8 @@
 !  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/Huu/SPRING_2024/OUT_DATA/VAPOR/MASTER/VAPOR/'
 
   character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/sp24/ram_4_24/test4/DATA/'
-  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData4/'
-  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData4/Merge/'
+  character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData5/Merge/'
+  character(*) ,parameter :: dir_a = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData5/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file

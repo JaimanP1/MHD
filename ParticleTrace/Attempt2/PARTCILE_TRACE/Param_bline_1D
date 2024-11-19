@@ -1,0 +1,4 @@
+1,40, 0.9,  1.0, 0.6, 200    !  dimension, line_number, red, gree, blue,radius
+1.40, 1.78, 0.00, 0.005, 0.00, 0.0  ! (x,y,z)_0, (dx,dy,dz)_1, 
+
+ 

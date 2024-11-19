@@ -286,7 +286,7 @@
 ! Boundary Condition at Top
 ! ----------------------------------------------------------------------------
   dro(NZ,:,:) = 0.0d0
-!  dbx(NZ,:,:) = 0.0d0
+!  dbx(NZ,:,:) = 0.0d0  open derivative, all other are Neumann boundary
 !  dby(NZ,:,:) = 0.0d0
   dbz(NZ,:,:) = 0.0d0
   dvx(NZ,:,:) = 0.0d0

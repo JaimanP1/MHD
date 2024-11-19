@@ -3,7 +3,7 @@
 integer,parameter :: NX    = 360
 integer,parameter :: NY    = 360
 integer,parameter :: NZ    = 360
-integer,parameter :: loop0 = 18
+integer,parameter :: loop0 = 17
 integer,parameter :: nx0 = NX*0, nx1 = NX*1.0
 integer,parameter :: ny0 = NY*0, ny1 = NY*1.0
 integer,parameter :: nz0 = 0,    nz1 = NZ
@@ -26,4 +26,10 @@ integer,parameter :: nxyz=(nxl+1)*(nyl+1)*(nzl+1)
 real(8),parameter :: pi=3.14159265358979329d0,pi2=6.2831853071795864d0
 
 character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/OPoint/Test8/'
-character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData3/'
+
+!'/project/wangj/node819/Huu/FALL_2024/OUT_DATA/OLD/AVS/LNR1.0/TRACE/'
+character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData4/Merge/'
+!'/project/wangj/node819/Huu/FALL_2024/OUT_DATA/OLD/AVS/LNR1.0/VAPOR/'
+
+
+
