@@ -1,0 +1,7 @@
+# Ignore all .o and .mod files
+*.o
+*.mod
+
+# Ignore all subdirectories
+*/
+
