@@ -725,13 +725,13 @@
        write(FILE_AVS_FIELD,*) 'label=Vx'
        write(FILE_AVS_FIELD,*) 'label=Vy'
        write(FILE_AVS_FIELD,*) 'label=Vz'
-!       write(FILE_AVS_FIELD,*) 'label=Vt'
-!       write(FILE_AVS_FIELD,*) 'label=Jx'
-!       write(FILE_AVS_FIELD,*) 'label=Jy'
-!       write(FILE_AVS_FIELD,*) 'label=Jz'
-!       write(FILE_AVS_FIELD,*) 'label=CB2'
-!       write(FILE_AVS_FIELD,*) 'label=CT_BT'
-!       write(FILE_AVS_FIELD,*) 'label=DIVV'
+       write(FILE_AVS_FIELD,*) 'label=Vt'
+       write(FILE_AVS_FIELD,*) 'label=Jx'
+       write(FILE_AVS_FIELD,*) 'label=Jy'
+       write(FILE_AVS_FIELD,*) 'label=Jz'
+       write(FILE_AVS_FIELD,*) 'label=CB2'
+       write(FILE_AVS_FIELD,*) 'label=CT_BT'
+       write(FILE_AVS_FIELD,*) 'label=DIVV'
 
 100 format(1e25.16) !to correctly format the data
 
@@ -812,19 +812,19 @@
 !       write(FILE_3D_SPARSE) cz_r
 !  close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 6 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) ct_vp
-!  close(FILE_3D_SPARSE)
-!
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 6 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) ct_bt_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
+  write(FILE_AVS_FIELD,*) &
+       'variable 6 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) ct_vp
+  close(FILE_3D_SPARSE)
+
+  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 6 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) ct_bt_vp
+  close(FILE_3D_SPARSE)
 
 !  filename = trim(cfile_3d_field)//'.'//cseries//'.DIVV.R'//'.'//trim(cloop)
 !  write(FILE_AVS_FIELD,*) &
