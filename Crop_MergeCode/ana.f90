@@ -147,33 +147,33 @@
 ! ===================================================================
 ! Decay Index
 ! ===================================================================
-!  index_dx = 61 ! 59
-!  index_dy = 62 ! 60
-!  do i =  43,78
-!  do j =  50,77
+  index_dx = 61 ! 59 do I change?
+  index_dy = 62 ! 60
+  do i =  43,78
+  do j =  50,77
 
-!  if(abs(bz_r(i,j,0)).le.0.01) then
-!     decay_index(k) = 0.0d0
-!  do k = 1,nz_r-1
-!     decay_index(k) = decay_index(k)         &
-!                      -                      &
-!                     (zc_r(k)/bt(i,j,k))* &
-!                      (                      &
-!                      ( (bt(i, j, k+1)  & 
-!                       - bt(i, j, k-1)) &
-!                        *0.5/dz_w(k))/35/27    &
-!                      )
-!  end do
-!  end if
+  if(abs(bz_r(i,j,0)).le.0.01) then
+     decay_index(k) = 0.0d0
+  do k = 1,nz_r-1
+     decay_index(k) = decay_index(k)         &
+                      -                      &
+                     (zc_r(k)/bt(i,j,k))* &
+                      (                      &
+                      ( (bt(i, j, k+1)  & 
+                       - bt(i, j, k-1)) &
+                        *0.5/dz_w(k))/35/27    &
+                      )
+  end do
+  end if
 
-!  end do
-!  end do
+  end do
+  end do
 
-!  open(12,file = dir//'DECAY_INDEX',form='formatted')
-!  do k = 1,nz_r   
-!     write(12,*)zc_r(k), decay_index(k)
-!  end do   
-!  close(12)
+  open(12,file = dir//'DECAY_INDEX',form='formatted')
+  do k = 1,nz_r   
+     write(12,*)zc_r(k), decay_index(k)
+  end do   
+  close(12)
 
 ! ===================================================================
 ! Magnetic, Kinetic, Energy 

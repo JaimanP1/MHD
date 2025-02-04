@@ -226,60 +226,60 @@
 ! ===========================================================
 ! Debug
 ! ===========================================================
-!  open(11,file = dir//'BOTTOM_BZ.'//trim(cloop),form='formatted')
-!  do i = 0, nx_r
-!  do j=  0, ny_r
-!     write(11,*) xc_r(i),yc_r(j),bz_r(i,j,0)
-!  end do
-!     write(11,*)' '
-!  end do
-!  close(11)
+  open(11,file = dir//'BOTTOM_BZ.'//trim(cloop),form='formatted')
+  do i = 0, nx_r
+  do j=  0, ny_r
+     write(11,*) xc_r(i),yc_r(j),bz_r(i,j,0)
+  end do
+     write(11,*)' '
+  end do
+  close(11)
  
-!  open(11,file = dir//'BOTTOM_BX.'//trim(cloop),form='formatted')
-!  do i = 0, nx_r
-!  do j=  0, ny_r
-!     write(11,*) xc_r(i),yc_r(j),bx_r(i,j,0)
-!  end do
-!     write(11,*)' '
-!  end do
-!  close(11)      
+  open(11,file = dir//'BOTTOM_BX.'//trim(cloop),form='formatted')
+  do i = 0, nx_r
+  do j=  0, ny_r
+     write(11,*) xc_r(i),yc_r(j),bx_r(i,j,0)
+  end do
+     write(11,*)' '
+  end do
+  close(11)      
 
-!  open(11,file = dir//'BOTTOM_BY.'//trim(cloop),form='formatted')
-!  do i = 0, nx_r
-!  do j=  0, ny_r
-!     write(11,*) xc_r(i),yc_r(j),by_r(i,j,0)
-!  end do
-!     write(11,*)' '
-!  end do
-!  close(11)    
-!
-!  open(11,file = dir//'BOTTOM_VX.'//trim(cloop),form='formatted')
-!  do i = 0, nx_r
-!  do j=  0, ny_r
-!     write(11,*) xc_r(i),yc_r(j),vx_r(i,j,1)
-!  end do
-!     write(11,*)' '
-!  end do
-!  close(11)   
-!
-!  open(11,file = dir//'BOTTOM_VY.'//trim(cloop),form='formatted')
-!  do i = 0, nx_r
-!  do j=  0, ny_r
-!    write(11,*) xc_r(i),yc_r(j),vy_r(i,j,1)
-!  end do
-!     write(11,*)' '
-!  end do
-!  close(11)
-!
-!  open(11,file = dir//'BOTTOM_VZ.'//trim(cloop),form='formatted')
-!  do i = 0, nx_r
-! do j=  0, ny_r
-!     write(11,*) xc_r(i),yc_r(j),vz_r(i,j,1)
-!  end do
-!     write(11,*)' '
-!  end do
-!  close(11)
-!
+  open(11,file = dir//'BOTTOM_BY.'//trim(cloop),form='formatted')
+  do i = 0, nx_r
+  do j=  0, ny_r
+     write(11,*) xc_r(i),yc_r(j),by_r(i,j,0)
+  end do
+     write(11,*)' '
+  end do
+  close(11)    
+
+  open(11,file = dir//'BOTTOM_VX.'//trim(cloop),form='formatted')
+  do i = 0, nx_r
+  do j=  0, ny_r
+     write(11,*) xc_r(i),yc_r(j),vx_r(i,j,1)
+  end do
+     write(11,*)' '
+  end do
+  close(11)   
+
+  open(11,file = dir//'BOTTOM_VY.'//trim(cloop),form='formatted')
+  do i = 0, nx_r
+  do j=  0, ny_r
+    write(11,*) xc_r(i),yc_r(j),vy_r(i,j,1)
+  end do
+     write(11,*)' '
+  end do
+  close(11)
+
+  open(11,file = dir//'BOTTOM_VZ.'//trim(cloop),form='formatted')
+  do i = 0, nx_r
+ do j=  0, ny_r
+     write(11,*) xc_r(i),yc_r(j),vz_r(i,j,1)
+  end do
+     write(11,*)' '
+  end do
+  close(11)
+
   
 !  open(11,file = dir//'BOTTOM_CX.'//trim(cloop),form='formatted')
 !  do i = 0, nx_r

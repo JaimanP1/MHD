@@ -28,3 +28,4 @@ make
 # Run the mpi program
 srun MergeCode
 
+make clean
