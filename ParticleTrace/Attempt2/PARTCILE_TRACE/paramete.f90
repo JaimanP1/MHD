@@ -25,7 +25,7 @@ integer,parameter :: nxyz=(nxl+1)*(nyl+1)*(nzl+1)
 !
 real(8),parameter :: pi=3.14159265358979329d0,pi2=6.2831853071795864d0
 
-character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/OPoint/Test8/'
+character(*) ,parameter :: dir   = '/project/wangj/node819/Jaiman/Wulver/fa24/OPoint/Test11/'
 
 !'/project/wangj/node819/Huu/FALL_2024/OUT_DATA/OLD/AVS/LNR1.0/TRACE/'
 character(*) ,parameter :: dir_r = '/project/wangj/node819/Jaiman/Wulver/fa24/SimData4/Merge/'

@@ -8,14 +8,14 @@
   implicit none
 
 ! === processor number ===
-  integer, parameter :: N_PROC  = 64  ! number of the processors >= 1
-  integer, parameter :: N_PROC_X= 8
-  integer, parameter :: N_PROC_Y= 8
+  integer, parameter :: N_PROC  = 144  ! number of the processors >= 1
+  integer, parameter :: N_PROC_X= 12
+  integer, parameter :: N_PROC_Y= 12
 
 ! === grid number in a sub-domain ===
-  integer, parameter :: NX = 40
-  integer, parameter :: NY = 40
-  integer, parameter :: NZ = 320
+  integer, parameter :: NX = 30
+  integer, parameter :: NY = 30
+  integer, parameter :: NZ = 360
 
 ! === grid number in a whole-domain ===
   integer, parameter :: NX_W=NX*N_PROC_X
@@ -33,12 +33,12 @@
   integer, parameter :: NZ_R=NZ_W/LEAPZ
 
 ! === AVS rearrange grid ===
-  integer, parameter :: NX_ARR = 192 !200  
-  integer, parameter :: NY_ARR = 192 !200  
-  integer, parameter :: NZ_ARR = 230 !200  
+  integer, parameter :: NX_ARR = 360 !200  
+  integer, parameter :: NY_ARR = 360 !200  
+  integer, parameter :: NZ_ARR = 360 !200  
 
-  integer, parameter :: NX_avs = 64 !50   !! Start point
-  integer, parameter :: NY_avs = 64 !50   !! Start Point
+  integer, parameter :: NX_avs = 0 !50   !! Start point
+  integer, parameter :: NY_avs = 0 !50   !! Start Point
 
 ! === sub-grid number ===
   integer, parameter :: nxm1=NX-1
@@ -59,10 +59,9 @@
   complex(DPC), parameter :: IUNIT = (0.0_DP, 1.0_DP)
 
 ! === READ & OUTPUT FOLDER ============
-  character(*) ,parameter :: dir_r = '/cluster/solarlab/nobackup/inosato/MHD/HUU/TW_R/DATA/'
-  character(*) ,parameter :: dir   = '/cluster/solarlab/nobackup/inosato/MHD/HUU/TW_R/OUT_DATA/'
-  character(*) ,parameter :: dir_a = '/cluster/solarlab/nobackup/inosato/MHD/HUU/TW_R/OUT_DATA/VAPOR/'
-
+  character(*) ,parameter :: dir_r = '/project/si22/jdp46/sp25/Test1/MHD/'
+  character(*) ,parameter :: dir   = '/project/si22/jdp46/sp25/Test1/VAPOR/Merge/'
+  character(*) ,parameter :: dir_a = '/project/si22/jdp46/sp25/Test1/VAPOR/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file
