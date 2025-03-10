@@ -1,14 +1,14 @@
 # MHD
-MHD code from work with Prof Satoshi Inoue, CSTR, NJIT
+MHD code from work with Prof. Satoshi Inoue, CSTR, NJIT using the HPC Wulver.
 
-This code outputs both binary and vdc data to generate Magnetic Flux ropes in quadrupolar photosphere topologies for Coronal Mass Ejections. The vdc data can be visualized in VAPOR. 
+This code outputs both binary and png data to visualize magnetic flux ropes in quadrupolar photospheric topologies for coronal mass ejections. The visualization process is done through NCAR VAPOR API. 
 
 This code is parallelized to run on up to 144 cores on 2 nodes. 
 
-Refer to Wiki page for more information (in progress)
+Recent updates include finishing the implementation of the API so data does not have to be downloaded locally for visualization.
 
-Recent updates include finishing the implementation of a function to stop the twisting motion at a specified time.
+Current work revolves around investigating the roles of MHD instability and magnetic reconnection in the Breakout Model.
 
-Current work revolves around investigating why halting the twisting motion yields (plasmoid/breakout) reconnection.
+Future work will likely include an effort to create a more elastic parallelization scheme and implement a more robust PDE solver.
 
-Future work will likely include an effort to create a more elastic parallelization scheme, using Galerkin/Finite-Element methods as opposed to Runge-Kutta methods, and comparing converging motions with twisting motions.
+Will also make a wiki page when I get to it.
