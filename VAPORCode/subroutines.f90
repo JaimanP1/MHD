@@ -739,21 +739,21 @@
   write(FILE_AVS_FIELD,*) &
        'variable 1 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE, 100) bx_vp !100 stands for label of format specifier
+       write(FILE_3D_SPARSE) bx_vp !100 stands for label of format specifier
   close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.BY.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 2 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE, 100) by_vp
+       write(FILE_3D_SPARSE) by_vp
   close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.BZ.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 3 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE, 100) bz_vp
+       write(FILE_3D_SPARSE) bz_vp
   close(FILE_3D_SPARSE)
 !
 !  filename = trim(cfile_3d_field)//'.'//cseries//'.RO'//'.'//trim(cloop)

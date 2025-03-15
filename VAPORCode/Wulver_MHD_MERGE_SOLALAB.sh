@@ -4,7 +4,7 @@
 #SBATCH --job-name=mhd_merge
 #SBATCH --output=Out_files/mhd_merge%j.out # %j expands to slurm JobID
 #SBATCH --error=Err_files/mhd_merge%j.err
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=64
 #SBATCH --qos=high_wangj
 #SBATCH --partition=general
@@ -16,7 +16,7 @@
 #SBATCH --mem-per-cpu=4G 
 
 # Time required in d-hh:mm:ss format; lower time gets scheduling priority
-#SBATCH --time=72:00:00
+#SBATCH --time=24:00:00
 
 # Purge and load the correct modules
 module purge > /dev/null 2>&1
