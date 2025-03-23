@@ -21,3 +21,4 @@ make
 # Run the mpi program
 srun ./bline
 
+make clean
