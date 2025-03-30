@@ -141,13 +141,13 @@
 !  read(10) cz
 !  close(10)
 !
-  open(10,file=dir_r//'TIME.'//trim(time_loop),  &
+  open(10,file=dir_r//'Merge/TIME.'//trim(time_loop),  &
        form='FORMATTED',status='OLD')
   read(10,*) atime
   close(10)
   write(10,*) atime
 
-  open(10,file=dir_r//'TIME.'//trim(time_loop_a),  &
+  open(10,file=dir_r//'Merge/TIME.'//trim(time_loop_a),  &
        form='FORMATTED',status='OLD')
   read(10,*) atime_a
   close(10)

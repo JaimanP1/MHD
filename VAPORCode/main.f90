@@ -215,9 +215,9 @@
 !   vz_sp(:,:,:) = real(vz_r(:,:,:))
 
 !! 3D data
-!   open(11,file = dir//'B3D_MHD.'//trim(cloop),form='unformatted')
-!   write(11)bx_r, by_r, bz_r
-!   close(11) 
+   open(11,file = dir//'B3D_MHD.'//trim(cloop),form='unformatted')
+   write(11)bx_r, by_r, bz_r, vx_r, vy_r, vz_r
+   close(11) 
 !
 !   open(11,file = dir//'B3D_MHD_RS.'//trim(cloop),form='unformatted')
 !   write(11)bx_rs, by_rs, bz_rs

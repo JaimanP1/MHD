@@ -8,6 +8,7 @@
 #SBATCH --ntasks-per-node=64
 #SBATCH --qos=high_wangj
 #SBATCH --partition=general
+#SBATCH --account=si22
 
 # Use "sinfo" to see what partitions are available to you
 #SBATCH --partition=general
