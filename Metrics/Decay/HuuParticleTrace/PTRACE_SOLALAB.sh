@@ -3,7 +3,7 @@
 #SBATCH --output=OutFiles/o-point_p-trace%j.out
 #SBATCH --error=ErrFiles/o-point_p-trace%j.err
 #SBATCH --partition=bigmem
-#SBATCH --account=wangj
+#SBATCH --account=si22
 #SBATCH --qos=high_wangj
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
