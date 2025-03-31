@@ -4,7 +4,7 @@ import numpy as np
 
 # Define parameters
 
-filename = '/project/cstr/Jaiman/sp25/Test2/VAPOR/Merge/B3D_MHD.040'  # Replace with actual file name
+filename = '/project/cstr/Jaiman/sp25/Test2/VAPOR/Merge/B3D_MHD.042'  # Replace with actual file name
 
 nx, ny, nz = 361, 361, 361  # Replace with actual grid dimensions
 
@@ -24,19 +24,19 @@ with open(filename, 'rb') as f:
 
         # Read 4-byte header (record length)
 
-        f.read(4)
+        f.read()
 
         
 
         # Read array data (double precision floats)
 
-        arr = np.fromfile(f, dtype=np.float32, count=nx*ny*nz)
+        arr = np.fromfile(f, dtype=np.float64, count=nx*ny*nz)
 
         
 
         # Read 4-byte trailer (record length)
 
-        f.read(4)
+        #f.read(4)
 
         
 
@@ -76,11 +76,11 @@ z_indices = np.where(np.isclose(by_r_180_180_z, 0.0, atol=1e-8))[0]
 
 if len(z_indices) > 0:
 
-    #print(f"by_r(0,0,z) = 0 at indices: {z_indices}")
+    print(f"by_r(0,0,z) = 0 at indices: {z_indices}")
 
-    for z in z_indices:
+    #for z in z_indices:
 
-        print(f"z = {z}, by_r(180,180,{z}) = {by_r_180_180_z[z]}")
+    #    print(f"z = {z}, by_r(180,180,{z}) = {by_r_180_180_z[z]}")
 
 else:
 
