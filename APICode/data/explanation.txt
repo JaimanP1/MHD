@@ -1,3 +1,0 @@
-These are sample brick of value file formats for the data. In the main directory there is a script for making a large batch of these. 
-
-I recommend changing the directory and files of the raw VAPOR data to be read and execute only though, just in case.

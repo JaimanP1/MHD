@@ -1,0 +1,23 @@
+
+#compute node. if you want to view the output images in terminal, must use GPU nodes (recommend using interactive linux desktop provided in HPC documentation)
+srun -p general -n 4 --qos=standard --account=si22 --time=4:00:00 --pty bash
+
+#for mamba
+module load Miniforge3
+
+#for videos
+module load foss/2021b FFmpeg/4.3.2 
+
+#for images
+module load foss/2021b ImageMagick/7.1.0-4 
+
+#virtual environment setup
+conda create --prefix=/your/project/directory
+
+conda activate ./your/environment
+
+#check to make sure everything was installed
+mamba --version
+
+#may take a few hours to run, depends on what modules are already cached in your environment and session
+mamba install -c conda-forge -c ncar-vapor vapor
