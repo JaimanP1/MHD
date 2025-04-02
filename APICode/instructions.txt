@@ -1,0 +1,39 @@
+#the following should be done in a project directory, not home directory and not using login nodes
+
+#compute node. if you want to view the output images in terminal, must use GPU nodes (recommend using interactive linux desktop provided in HPC documentation)
+srun -p general -n 4 --qos=standard --account=si22 --time=4:00:00 --pty bash
+
+#for mamba
+module load Miniforge3
+
+#for videos
+module load foss/2021b FFmpeg/4.3.2 
+
+#for images
+module load foss/2021b ImageMagick/7.1.0-4 
+
+#virtual environment setup
+conda create --prefix=/your/project/directory
+
+conda activate ./your/environment
+
+#check to make sure everything was installed
+mamba --version
+
+#may take a few hours to run, depends on what modules are already cached in your environment and session
+mamba install -c conda-forge -c ncar-vapor vapor
+
+#to create .bov files for data structure (adjust file paths as needed)
+./file_creation.sh
+
+#if you want just one timestep, run attempt6; for multiple timesteps, run attempt9. Adjust parameters as needed
+python3 ./attempt9.py
+
+#to view one image file in the shell
+magick display output_ts.png
+
+#to stitch together images
+ffmpeg -r 1 -pattern_type glob -i '*.png' -c:v libx264 out.mp4
+
+#to download movie to your laptop, assuming running linux. This command is run on local machine, not on shell
+scp ucid@login02.tartan.njit.edu:/project/your/directory/out.mp4 ~/your/local/machine/destination/directory/
