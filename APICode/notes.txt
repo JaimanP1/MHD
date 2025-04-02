@@ -2,10 +2,10 @@ A project to interact with VAPOR API.
 
 ONLY RUN THESE SCRIPTS IN THE PROJECT DIRECTORY 
 
-The environment file sets up a conda environment and installs the appropriate packages using mamba. 
+The instructions file sets up a conda environment and installs the appropriate packages using mamba. 
 It is incomplete, so do not run it. 
 Instead, copy the commands and run as needed.
-The install process will take at least 45 minutes, as the vapor module is approximately 13G
+The install process will take at least 45 minutes, as the vapor module is approximately 2G
 
 The .bov file is a header file for a Brick of Values unformatted data output by Fortran.
 It allows the API to read the raw binary data.
