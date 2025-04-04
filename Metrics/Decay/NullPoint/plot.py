@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 
 
-# File path for the output file
+# File path for the output file 
 
-file = '/content/output.txt' 
+file = '/content/output.txt' #do in colab
 
 
 
