@@ -11,7 +11,7 @@
   c_h          = 0.2d0,
   c_p          = 0.1d0,
   CFL          = 0.3e0,
-  TIME_CRI_T   = 3.0,
+  TIME_CRI_T   = 1.5,
  &END
  &NLIST02
   NLOOP_INCMAX = 48000,
