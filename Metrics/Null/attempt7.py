@@ -6,7 +6,7 @@ import os
 
 # File path template
 
-file_template = '/project/cstr/Jaiman/sp25/Test2/VAPOR/Merge/B3D_MHD.{:03d}'
+file_template = '/project/cstr/Jaiman/sp25/VAPORdata/Test4/Merge/B3D_MHD.{:03d}'
 
 
 
