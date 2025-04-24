@@ -20,7 +20,7 @@ k1 = data[:, 1]
 
 k2 = data[:, 2]
 
-
+k3 = data[:, 3]
 
 # Plot
 
@@ -30,13 +30,15 @@ plt.plot(timesteps, k1, label='1st sign change (k1)', marker='o')
 
 plt.plot(timesteps, k2, label='2nd sign change (k2)', marker='x')
 
-
+plt.plot(timesteps, k3, label='3rd sign change (k3)', marker='o')
 
 plt.xlabel("Timestep")
 
 plt.ylabel("k-index")
 
-plt.title("First and Second Sign Change Positions Over Time")
+plt.ylim(0,375)
+
+plt.title("Sign Changes Positions Over Time")
 
 plt.legend()
 

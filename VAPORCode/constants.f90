@@ -59,9 +59,9 @@
   complex(DPC), parameter :: IUNIT = (0.0_DP, 1.0_DP)
 
 ! === READ & OUTPUT FOLDER ============
-  character(*) ,parameter :: dir_r = '/project/si22/jdp46/sp25/Test1/MHD/'
-  character(*) ,parameter :: dir   = '/project/cstr/Jaiman/sp25/Test2/VAPOR/Merge/'
-  character(*) ,parameter :: dir_a = '/project/cstr/Jaiman/sp25/Test2/VAPOR/'
+  character(*) ,parameter :: dir_r = '/project/cstr/Jaiman/sp25/MHDdata/Test3/MHD/'
+  character(*) ,parameter :: dir   = '/project/cstr/Jaiman/sp25/VAPORdata/Test4/Merge/'
+  character(*) ,parameter :: dir_a = '/project/cstr/Jaiman/sp25/VAPORdata/Test4/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file
