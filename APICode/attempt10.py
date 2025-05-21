@@ -9,19 +9,19 @@ for ts in range(1, 141):
     # Initialize a new session for each timestep
     ses = session.Session()
 
-    output_file = f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/Outputs6/output_{ts_str}.png"
+    output_file = f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Outputs3/output_{ts_str}.png"
 
     if ts%5 == 0:
 
         try:
             # Open dataset with corresponding BOV files for the current timestep
             data = ses.OpenDataset(dataset.BOV, [
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/BX_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/BY_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/BZ_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/VZ_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/CB2_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test4/Images/CT_BT_{ts_str}.bov"
+                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BX_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BY_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BZ_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/VZ_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CB2_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CT_BT_{ts_str}.bov"
             ])
 
             # Create renderers
