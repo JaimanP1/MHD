@@ -199,11 +199,11 @@
 
 !
      if(0.43<=xc(i).and.xc(i)<=0.57.and.0.43<=yc(j).and.yc(j)<=0.57) then
-            vx2d_t(j,i) =   ( psi(jp,i)*d1y(j,+1)    &
+            vx2d_t(j,i) =   -( psi(jp,i)*d1y(j,+1)    &
                             + psi(j, i)*d1y(j, 0)    &
                             + psi(jm,i)*d1y(j,-1) )
                                                    
-            vy2d_t(j,i) = -( psi(j,ip)*d1x(i,+1)    &
+            vy2d_t(j,i) = ( psi(j,ip)*d1x(i,+1)    &
                             + psi(j,i )*d1x(i, 0)    &
                             + psi(j,im)*d1x(i,-1) )
      else
