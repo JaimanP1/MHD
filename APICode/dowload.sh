@@ -9,6 +9,8 @@ output_file="commands.txt"
 # List of variables
 vars=("BX" "BY" "BZ" "CB2" "CT_BT" "VX" "VY" "VZ")
 
+echo "vdccreate -dimension 361x361x361 -numts 30 -ncvars3d vx:vy:vz:cb2:ct_bt:bx:by:bz test.vdc" >> "$output_file"
+
 # Loop through variables
 for var in "${vars[@]}"; do
     for ((ts=0; ts<=30; ts++)); do
