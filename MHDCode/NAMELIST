@@ -14,8 +14,8 @@
   TIME_CRI_T   = 2.25,
  &END
  &NLIST02
-  NLOOP_INCMAX = 48000,
-  NLOOP_OUTPUT = 300,
+  NLOOP_INCMAX = 48,
+  NLOOP_OUTPUT = 3,
  &END
  &NLIST03
   EPSX         = 0.0,
@@ -36,8 +36,8 @@
   cfile_restart      = 'B3D_RESTART',
  &END
  &NLIST05
- nproc_x = 12,
- nproc_y = 12,
+ nproc_x = 13,
+ nproc_y = 17,
  &END
  /
 

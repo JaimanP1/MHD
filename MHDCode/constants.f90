@@ -35,7 +35,7 @@
 ! -------
 ! I/O
 ! -------
- character(*),parameter :: dir   = '/project/cstr/Jaiman/sp25/MHDdata/Test3/MHD/'
+ character(*),parameter :: dir   = '/scratch/si22/jdp46/su25/ToDelete3/'
  character(*),parameter :: dir_r = '/project/cstr/Jaiman/sp24/sp24TwistLong/inData/'
 
 ! character(*),parameter :: dir_r  = '/research/solarlab_nobackup/inosato/MHD/FLUX_EME/POTE_DATA/320/'
