@@ -20,8 +20,8 @@ for var in "${variables[@]}"; do
     for ((t=$start_time; t<=$end_time; t++)); do
         # Format timestep with leading zeros (e.g., 001, 002, ..., 120)
         timestep=$(printf "%03d" $t)
-        data_file="/project/si22/jdp46/sp25/Test1/VAPOR/B3D.001.${var}.R.${timestep}"
-        bov_file="${var}_${timestep}.bov"
+        data_file="/project/cstr/Jaiman/su25/Helicity/Test1/VAPOR/B3D.001.${var}.R.${timestep}"
+        bov_file="/project/cstr/Jaiman/su25/Helicity/Test1/BOV/${var}_${timestep}.bov"
 
         # Write the BOV file
         cat > $bov_file <<EOL
@@ -56,7 +56,7 @@ BRICK_ORIGIN: $brick_origin
 BYTE_OFFSET: $byte_offset
 EOL
 
-        echo "Generated $bov_file"
+       # echo "Generated $bov_file"
     done
 done
 

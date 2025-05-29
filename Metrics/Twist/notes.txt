@@ -1,1 +1,3 @@
-Want to track magnetic twist. 
+Want to track magnetic twist.
+
+Bash script is to first compare effect of imposed velocity twisting motion on helicity by checking VX, VY, VZ movies. To achieve opposite twisting motion, vx --. -vx, -vy --> vy. The time_crit is kept to 2.25 for both runs

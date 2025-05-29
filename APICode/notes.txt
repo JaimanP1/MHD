@@ -1,11 +1,10 @@
 A project to interact with VAPOR API.
 
-ONLY RUN THESE SCRIPTS IN THE PROJECT DIRECTORY 
+Only run these scripts in the project directory, not your home directory. 
 
 The instructions file sets up a conda environment and installs the appropriate packages using mamba. 
-It is incomplete, so do not run it. 
-Instead, copy the commands and run as needed.
-The install process will take at least 45 minutes, as the vapor module is approximately 2G
+Copy the commands and run as needed.
+The install process will take at least 45 minutes, as the vapor module is approximately 2 GB.
 
 The .bov file is a header file for a Brick of Values unformatted data output by Fortran.
 It allows the API to read the raw binary data.
@@ -14,8 +13,7 @@ Replace paths as appropriate.
 The python script saves a render using the API to a .png file. 
 Use ffmpeg to stitch together .png to a .mp4
 
-All scripts here are very rudimentary tests. 
-The goal is to have one bash script to run which automatically sets up the environment, writes the format for the files, and calls the API.
-The user can then interactively adjust parameters as needed. 
+Currently, following the instructions in the environment setup file and run attempt9 is working pipeline for field lines confined to a cross section.
+The attempt10 script is for fully 3d field lines, though there are some issues with getting the field lines to render properly, namely with the integration steps parameter.
 
-Currently, following the instructions in the environment setup file and run attempt9 is working pipeline
+Feel free to ask me questions as needed and contribute to the code. 

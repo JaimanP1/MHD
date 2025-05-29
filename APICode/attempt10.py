@@ -3,25 +3,31 @@ from vapor import session, renderer, dataset
 from vapor.dataset import Dataset
 
 # Loop over time steps from 1 to 160 (inclusive)
-for ts in range(1, 141):  
+for ts in range(1, 101):  
     ts_str = f"{ts:03d}"  # Ensure consistent zero-padded format if needed (e.g., "001", "002", ..., "160")
 
     # Initialize a new session for each timestep
     ses = session.Session()
 
-    output_file = f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Outputs3/output_{ts_str}.png"
+    output_file = f"/project/cstr/Jaiman/su25/Helicity/Test1/Outputs/FrontView/output_{ts_str}.png"
 
-    if ts%5 == 0:
+    if ts%1 == 0:
 
         try:
             # Open dataset with corresponding BOV files for the current timestep
             data = ses.OpenDataset(dataset.BOV, [
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BX_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BY_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BZ_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/VZ_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CB2_{ts_str}.bov",
-                f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CT_BT_{ts_str}.bov"
+                f"/project/cstr/Jaiman/su25/Helicity/Test1/BOV/BX_{ts_str}.bov",
+                f"/project/cstr/Jaiman/su25/Helicity/Test1/BOV/BY_{ts_str}.bov",
+                f"/project/cstr/Jaiman/su25/Helicity/Test1/BOV/BZ_{ts_str}.bov",
+                f"/project/cstr/Jaiman/su25/Helicity/Test1/BOV/VZ_{ts_str}.bov",
+                f"/project/cstr/Jaiman/su25/Helicity/Test1/BOV/CB2_{ts_str}.bov",
+                f"/project/cstr/Jaiman/su25/Helicity/Test1/BOV/CT_BT_{ts_str}.bov"
+               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BX_{ts_str}.bov",
+               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BY_{ts_str}.bov",
+               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BZ_{ts_str}.bov",
+               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/VZ_{ts_str}.bov",
+               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CB2_{ts_str}.bov",
+               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CT_BT_{ts_str}.bov"
             ])
 
             # Create renderers
@@ -62,8 +68,8 @@ for ts in range(1, 141):
             bounding_box2 = ren4.GetRakeRegion()
             val2 = bounding_box2.GetExtents()
 
-            min_extents2 = [0, 0, 0]  
-            max_extents2 = [360, 360, 180]
+            min_extents2 = [175, 175, 0]  
+            max_extents2 = [185, 185, 360]
 
             bounding_box2.SetExtents(min_extents2, max_extents2)
 
@@ -74,14 +80,17 @@ for ts in range(1, 141):
 
             ren4.SetSeedGenMode(0) #gridded
 
-            ren4.SetGridNumOfSeeds([1,1,40])
+            ren4.SetGridNumOfSeeds([5,5,10])
 
             ren4.GetPrimaryTransferFunction().LoadBuiltinColormap("Sequential/thermal")
 
             ren4.SetFlowDirection(2) #bidirectional
 
-            ren4.SetRenderFadeTailStart(1) #integration steps?
-            ren4.SetRenderFadeTailStop(1000)
+            #ren4.SetRenderFadeTailStart(1) #integration steps?
+            #ren4.SetRenderFadeTailStop(10000)
+            
+            print(ren4.GetSteadyNumOfSteps())
+            ren4.SetSteadyNumOfSteps(10000)
 
             ren4.SetRenderRadiusScalar(1) #size of flow line, default is around 1
 
