@@ -10,8 +10,6 @@
 #SBATCH --partition=general
 #SBATCH --account=si22
 
-# Use "sinfo" to see what partitions are available to you
-#SBATCH --partition=general
 
 # Memory required; lower amount gets scheduling priority
 #SBATCH --mem-per-cpu=4G 
@@ -22,7 +20,7 @@
 # Purge and load the correct modules
 module purge > /dev/null 2>&1
 module load wulver
-module load foss/2022b
+module load foss/2024a
 module use /opt/site/easybuild/modules/all/Core
 make
 
