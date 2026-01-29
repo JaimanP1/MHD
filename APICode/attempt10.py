@@ -4,15 +4,15 @@ from vapor import session, renderer, dataset
 from vapor.dataset import Dataset
 
 # Loop over time steps from 1 to 160 (inclusive)
-for ts in range(1, 161): #161  
+for ts in range(91, 161): #161  
     ts_str = f"{ts:03d}"  # Ensure consistent zero-padded format if needed (e.g., "001", "002", ..., "160")
 
     # Initialize a new session for each timestep
     ses = session.Session()
 
-    output_file = f"/project/cstr/Jaiman/sp26/Project1/Test1/Outputs/2_DensityFrontView/output_{ts_str}.png"
+    output_file = f"/project/cstr/Jaiman/sp26/Project1/Test1/Outputs/FullMovie_DensityFrontView/output_{ts_str}.png"
 
-    if ts%10 == 0:
+    if ts%1 == 0:
 
         try:
             # Open dataset with corresponding BOV files for the current timestep
@@ -47,6 +47,9 @@ for ts in range(1, 161): #161
 
             # Configure the second renderer
 
+            data_range = data.GetDataRange("RO")
+
+            max_val = data_range[1]
 
             ren2.SetVariableName("RO")
 
@@ -56,7 +59,7 @@ for ts in range(1, 161): #161
 
             ren2.GetPrimaryTransferFunction().SetOpacityScale(0.5)
 
-            ren2.GetPrimaryTransferFunction().SetMaxMapValue(0.01)
+            ren2.GetPrimaryTransferFunction().SetMaxMapValue(np.log10(max_val))
 
     #ren3 used to be here
 

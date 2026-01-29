@@ -1,4 +1,3 @@
-
 from vapor import session, renderer, dataset
 from vapor.dataset import Dataset
 
@@ -24,6 +23,10 @@ for ts in range(1, 161): #161
             ])
 
             print(f"density range: ", data.GetDataRange("RO")) 
+
+            ren1 = data.NewRenderer(renderer.SliceRenderer)
+
+            print(ren1.GetPrimaryTransferFunction().ListBuiltinColormaps())
 
         except Exception as e:
             print(f"Error processing timestep {ts_str}: {e}")
