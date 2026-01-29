@@ -1,17 +1,18 @@
-
+import numpy as np
+import matplotlib.pyplot as plt
 from vapor import session, renderer, dataset
 from vapor.dataset import Dataset
 
 # Loop over time steps from 1 to 160 (inclusive)
-for ts in range(10, 161): #161  
+for ts in range(1, 161): #161  
     ts_str = f"{ts:03d}"  # Ensure consistent zero-padded format if needed (e.g., "001", "002", ..., "160")
 
     # Initialize a new session for each timestep
     ses = session.Session()
 
-    output_file = f"/project/cstr/Jaiman/fa25/Project1/Test2/Outputs/DensityFrontView/output_{ts_str}.png"
+    output_file = f"/project/cstr/Jaiman/sp26/Project1/Test1/Outputs/2_DensityFrontView/output_{ts_str}.png"
 
-    if ts%1 == 0:
+    if ts%10 == 0:
 
         try:
             # Open dataset with corresponding BOV files for the current timestep
@@ -23,12 +24,6 @@ for ts in range(10, 161): #161
                 f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/CB2_{ts_str}.bov",
                 f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/CT_BT_{ts_str}.bov",
                 f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/RO_{ts_str}.bov"
-               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BX_{ts_str}.bov",
-               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BY_{ts_str}.bov",
-               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/BZ_{ts_str}.bov",
-               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/VZ_{ts_str}.bov",
-               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CB2_{ts_str}.bov",
-               # f"/project/cstr/Jaiman/sp25/VAPORdata/Test3/Images/CT_BT_{ts_str}.bov"
             ])
 
             # Create renderers
@@ -52,6 +47,7 @@ for ts in range(10, 161): #161
 
             # Configure the second renderer
 
+
             ren2.SetVariableName("RO")
 
             ren2.SetZSlicePlaneOrigin(0.5) #halfway up the box
@@ -59,6 +55,8 @@ for ts in range(10, 161): #161
             ren2.SetYSlicePlaneRotation(-90) #rotated
 
             ren2.GetPrimaryTransferFunction().SetOpacityScale(0.5)
+
+            ren2.GetPrimaryTransferFunction().SetMaxMapValue(0.01)
 
     #ren3 used to be here
 
