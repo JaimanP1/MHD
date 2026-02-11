@@ -60,8 +60,8 @@
 
 ! === READ & OUTPUT FOLDER ============
   character(*) ,parameter :: dir_r = '/project/cstr/Jaiman/sp26/Project1/Test2/MHD/'
-  character(*) ,parameter :: dir   = '/project/cstr/Jaiman/sp26/Project1/Test2/VAPOR/Merge/'
-  character(*) ,parameter :: dir_a = '/project/cstr/Jaiman/sp26/Project1/Test2/VAPOR/'
+  character(*) ,parameter :: dir   = '/project/cstr/Jaiman/sp26/Project1/Test2/VAPOR2/Merge/'
+  character(*) ,parameter :: dir_a = '/project/cstr/Jaiman/sp26/Project1/Test2/VAPOR2/'
 
 ! === I/O file number
   integer, parameter :: FILE_SYSOUT       = 06 ! sysout file

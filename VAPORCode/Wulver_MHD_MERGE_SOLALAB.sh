@@ -1,7 +1,7 @@
 #!/bin/bash -l
 # The above line must be first and must include the "-l"
 
-#SBATCH --job-name=mhd_merge_eruptive
+#SBATCH --job-name=mhd_merge
 #SBATCH --output=Out_files/mhd_merge%j.out # %j expands to slurm JobID
 #SBATCH --error=Err_files/mhd_merge%j.err
 #SBATCH --nodes=2
