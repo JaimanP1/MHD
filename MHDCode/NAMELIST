@@ -11,11 +11,11 @@
   c_h          = 0.2d0,
   c_p          = 0.1d0,
   CFL          = 0.3e0,
-  TIME_CRI_T   = 2.25,
+  TIME_CRI_T   = 3.00,
  &END
  &NLIST02
-  NLOOP_INCMAX = 48000,
-  NLOOP_OUTPUT = 300,
+  NLOOP_INCMAX = 16000,
+  NLOOP_OUTPUT = 500,
  &END
  &NLIST03
   EPSX         = 0.0,

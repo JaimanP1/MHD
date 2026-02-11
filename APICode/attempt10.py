@@ -4,26 +4,26 @@ from vapor import session, renderer, dataset
 from vapor.dataset import Dataset
 
 # Loop over time steps from 1 to 160 (inclusive)
-for ts in range(91, 161): #161  
+for ts in range(1, 50): #161  
     ts_str = f"{ts:03d}"  # Ensure consistent zero-padded format if needed (e.g., "001", "002", ..., "160")
 
     # Initialize a new session for each timestep
     ses = session.Session()
 
-    output_file = f"/project/cstr/Jaiman/sp26/Project1/Test1/Outputs/FullMovie_DensityFrontView/output_{ts_str}.png"
+    output_file = f"/project/cstr/Jaiman/sp26/Project1/Test3/API/Outputs/DensityFrontView/output_{ts_str}.png"
 
     if ts%1 == 0:
 
         try:
             # Open dataset with corresponding BOV files for the current timestep
             data = ses.OpenDataset(dataset.BOV, [
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/BX_{ts_str}.bov",
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/BY_{ts_str}.bov",
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/BZ_{ts_str}.bov",
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/VZ_{ts_str}.bov",
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/CB2_{ts_str}.bov",
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/CT_BT_{ts_str}.bov",
-                f"/project/cstr/Jaiman/fa25/Project1/Test2/BOV/RO_{ts_str}.bov"
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/BX_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/BY_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/BZ_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/VZ_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/CB2_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/CT_BT_{ts_str}.bov",
+                f"/project/cstr/Jaiman/sp26/Project1/Test3/API/BOV/RO_{ts_str}.bov"
             ])
 
             # Create renderers
@@ -59,7 +59,7 @@ for ts in range(91, 161): #161
 
             ren2.GetPrimaryTransferFunction().SetOpacityScale(0.5)
 
-            ren2.GetPrimaryTransferFunction().SetMaxMapValue(np.log10(max_val))
+            #ren2.GetPrimaryTransferFunction().SetMaxMapValue(np.log10(max_val))
 
     #ren3 used to be here
 

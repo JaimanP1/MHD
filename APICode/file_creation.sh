@@ -6,7 +6,7 @@ variables=("RO")
 
 # Number of timesteps
 start_time=1
-end_time=160
+end_time=50
 
 # File size and format parameters
 data_size="361 361 361"
@@ -21,9 +21,8 @@ for var in "${variables[@]}"; do
     for ((t=$start_time; t<=$end_time; t++)); do
         # Format timestep with leading zeros (e.g., 001, 002, ..., 120)
         timestep=$(printf "%03d" $t)
-        data_file="/project/cstr/Jaiman/fa25/Project1/Test2/VAPOR/B3D.001.${var}.${timestep}"
-	#"/project/cstr/Jaiman/fa25/Project1/Test2/VAPOR/B3D.001.${var}.R.${timestep}"
-        bov_file="/project/cstr/Jaiman/fa25/Project1/Test2/BOV/${var}_${timestep}.bov"
+        data_file="/project/cstr/Jaiman/sp26/Project1/Test2/VAPOR/B3D.001.${var}.${timestep}"
+        bov_file="/project/cstr/Jaiman/sp26/Project1/Test2/API/BOV/${var}_${timestep}.bov"
 
         # Write the BOV file
         cat > $bov_file <<EOL

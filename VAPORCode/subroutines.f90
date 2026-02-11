@@ -685,7 +685,7 @@
 ! ------------------------------------------------------------------
   bt(:,:,:) = sqrt(bx_r(:,:,:)**2 + by_r(:,:,:)**2 + bz_r(:,:,:)**2) 
 
-  ro_vp(:,:,:) = real(ro_arr(:,:,:))
+  ro_vp(:,:,:) = LOG( MAX(real(ro_arr(:,:,:)), 1.0E-30) )  ! plotting log of ro, taking care of negatives with max
   bx_vp(:,:,:) = real(bx_arr(:,:,:))
   by_vp(:,:,:) = real(by_arr(:,:,:))
   bz_vp(:,:,:) = real(bz_arr(:,:,:))
