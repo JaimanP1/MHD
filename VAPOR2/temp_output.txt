@@ -1,0 +1,283 @@
+diff --git a/Crop_MergeCode/subroutines.f90 b/Crop_MergeCode/subroutines.f90
+index 94a0700..80918e5 100644
+--- a/Crop_MergeCode/subroutines.f90
++++ b/Crop_MergeCode/subroutines.f90
+@@ -302,8 +302,8 @@
+ ! -----------------------------------------------------
+ !         output coordinate file for sparse data
+ ! -----------------------------------------------------
+- 100  format(1e14.6)
+-!  100  format(e25.16)
++! 100  format(1e14.6)
++ 100  format(1e25.16)
+          open(FILE_COORD_R_X,file=dir//'coord.xgc',form='formatted')
+          do i = 0, NX_R
+             write(FILE_COORD_R_X,100) xc_w(i*LEAPX) 
+@@ -596,8 +596,8 @@
+  end do
+  end do
+ 
+- 100  format(1e14.6)
+-!  100  format(e25.16)
++! 100  format(1e14.6)
++ 100  format(1e25.16)
+          open(FILE_COORD_R_X,file=dir_a//'coord.xgc',form='formatted')
+          do i = NX_avs, NX_avs + NX_ARR
+             write(FILE_COORD_R_X,100) xc_w(i*LEAPX) 
+@@ -627,7 +627,7 @@
+   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: bx_avs,  by_avs, bz_avs
+   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: vx_avs,  vy_avs, vz_avs
+   real(DP),dimension(0:nx_r,0:ny_r,0:nz_r-k_s)     :: cx_avs,  cy_avs, cz_avs
+-  real,    dimension(0:200, 0:200, 0:360)         :: bx_vp, by_vp, bz_vp,   &
++  real(DP),dimension(0:NX_ARR, 0:NY_ARR, 0:NZ_ARR)         :: bx_vp, by_vp, bz_vp,   & !changed from real to real(DP)
+                                                       vx_vp, vy_vp, vz_vp,   &
+                                                       cz_vp, ct_vp, ro_vp,   &
+                                                       ct_bt_vp, divv_vp,vt_vp
+@@ -729,29 +729,31 @@
+ !       write(FILE_AVS_FIELD,*) 'label=Jx'
+ !       write(FILE_AVS_FIELD,*) 'label=Jy'
+ !       write(FILE_AVS_FIELD,*) 'label=Jz'
+-       write(FILE_AVS_FIELD,*) 'label=CB2'
+-       write(FILE_AVS_FIELD,*) 'label=CT_BT'
+-       write(FILE_AVS_FIELD,*) 'label=DIVV'
++!       write(FILE_AVS_FIELD,*) 'label=CB2'
++!       write(FILE_AVS_FIELD,*) 'label=CT_BT'
++!       write(FILE_AVS_FIELD,*) 'label=DIVV'
++
++100 format(1e25.16) !to correctly format the data
+ 
+   filename = trim(cfile_3d_field)//'.'//cseries//'.BX.R'//'.'//trim(cloop)
+   write(FILE_AVS_FIELD,*) &
+        'variable 1 file='//trim(filename)//' filetype=unformatted'
+   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+-       write(FILE_3D_SPARSE) bx_vp
++       write(FILE_3D_SPARSE, 100) bx_vp !100 stands for label of format specifier
+   close(FILE_3D_SPARSE)
+ !
+   filename = trim(cfile_3d_field)//'.'//cseries//'.BY.R'//'.'//trim(cloop)
+   write(FILE_AVS_FIELD,*) &
+        'variable 2 file='//trim(filename)//' filetype=unformatted'
+   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+-       write(FILE_3D_SPARSE) by_vp
++       write(FILE_3D_SPARSE, 100) by_vp
+   close(FILE_3D_SPARSE)
+ !
+   filename = trim(cfile_3d_field)//'.'//cseries//'.BZ.R'//'.'//trim(cloop)
+   write(FILE_AVS_FIELD,*) &
+        'variable 3 file='//trim(filename)//' filetype=unformatted'
+   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+-       write(FILE_3D_SPARSE) bz_vp
++       write(FILE_3D_SPARSE, 100) bz_vp
+   close(FILE_3D_SPARSE)
+ !
+ !  filename = trim(cfile_3d_field)//'.'//cseries//'.RO'//'.'//trim(cloop)
+@@ -810,19 +812,19 @@
+ !       write(FILE_3D_SPARSE) cz_r
+ !  close(FILE_3D_SPARSE)
+ !
+-  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
+-  write(FILE_AVS_FIELD,*) &
+-       'variable 6 file='//trim(filename)//' filetype=unformatted'
+-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+-       write(FILE_3D_SPARSE) ct_vp
+-  close(FILE_3D_SPARSE)
++!  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
++!  write(FILE_AVS_FIELD,*) &
++!       'variable 6 file='//trim(filename)//' filetype=unformatted'
++!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
++!       write(FILE_3D_SPARSE) ct_vp
++!  close(FILE_3D_SPARSE)
+ !
+-  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
+-  write(FILE_AVS_FIELD,*) &
+-       'variable 6 file='//trim(filename)//' filetype=unformatted'
+-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+-       write(FILE_3D_SPARSE) ct_bt_vp
+-  close(FILE_3D_SPARSE)
++!  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
++!  write(FILE_AVS_FIELD,*) &
++!       'variable 6 file='//trim(filename)//' filetype=unformatted'
++!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
++!       write(FILE_3D_SPARSE) ct_bt_vp
++!  close(FILE_3D_SPARSE)
+ 
+ !  filename = trim(cfile_3d_field)//'.'//cseries//'.DIVV.R'//'.'//trim(cloop)
+ !  write(FILE_AVS_FIELD,*) &
+
+-------------------------------------------------------------------------------------------------------------------------
+
+diff --git a/Crop_MergeCode/main.f90 b/Crop_MergeCode/main.f90
+index a377c2c..ca722d6 100644
+--- a/Crop_MergeCode/main.f90
++++ b/Crop_MergeCode/main.f90
+@@ -4,6 +4,7 @@
+ ! ==========================================================================
+   use subroutines
+   use ana
++  use common 
+   character*3   :: cseries
+   character*4   :: cproc
+   character*100 :: filename
+@@ -41,8 +42,9 @@
+ ! ============================================================================
+   write(cseries,'(i3.3)') series
+   write(*,*) '## read file #',series
+-!
+-  do loop = 1,11
++
++  ! do loop = 1,11 previously
++  do loop = 1, (nloop_incmax / nloop_output) + 1
+   write(cloop,'(i3.3)') loop
+   write(6,*)cloop
+ !
+@@ -224,59 +226,59 @@
+ ! ===========================================================
+ ! Debug
+ ! ===========================================================
+-  open(11,file = dir//'BOTTOM_BZ.'//trim(cloop),form='formatted')
+-  do i = 0, nx_r
+-  do j=  0, ny_r
+-     write(11,*) xc_r(i),yc_r(j),bz_r(i,j,0)
+-  end do
+-     write(11,*)' '
+-  end do
+-  close(11)
++!  open(11,file = dir//'BOTTOM_BZ.'//trim(cloop),form='formatted')
++!  do i = 0, nx_r
++!  do j=  0, ny_r
++!     write(11,*) xc_r(i),yc_r(j),bz_r(i,j,0)
++!  end do
++!     write(11,*)' '
++!  end do
++!  close(11)
+  
+-  open(11,file = dir//'BOTTOM_BX.'//trim(cloop),form='formatted')
+-  do i = 0, nx_r
+-  do j=  0, ny_r
+-     write(11,*) xc_r(i),yc_r(j),bx_r(i,j,0)
+-  end do
+-     write(11,*)' '
+-  end do
+-  close(11)      
++!  open(11,file = dir//'BOTTOM_BX.'//trim(cloop),form='formatted')
++!  do i = 0, nx_r
++!  do j=  0, ny_r
++!     write(11,*) xc_r(i),yc_r(j),bx_r(i,j,0)
++!  end do
++!     write(11,*)' '
++!  end do
++!  close(11)      
+ 
+-  open(11,file = dir//'BOTTOM_BY.'//trim(cloop),form='formatted')
+-  do i = 0, nx_r
+-  do j=  0, ny_r
+-     write(11,*) xc_r(i),yc_r(j),by_r(i,j,0)
+-  end do
+-     write(11,*)' '
+-  end do
+-  close(11)    
++!  open(11,file = dir//'BOTTOM_BY.'//trim(cloop),form='formatted')
++!  do i = 0, nx_r
++!  do j=  0, ny_r
++!     write(11,*) xc_r(i),yc_r(j),by_r(i,j,0)
++!  end do
++!     write(11,*)' '
++!  end do
++!  close(11)    
+ !
+-  open(11,file = dir//'BOTTOM_VX.'//trim(cloop),form='formatted')
+-  do i = 0, nx_r
+-  do j=  0, ny_r
+-     write(11,*) xc_r(i),yc_r(j),vx_r(i,j,1)
+-  end do
+-     write(11,*)' '
+-  end do
+-  close(11)   
++!  open(11,file = dir//'BOTTOM_VX.'//trim(cloop),form='formatted')
++!  do i = 0, nx_r
++!  do j=  0, ny_r
++!     write(11,*) xc_r(i),yc_r(j),vx_r(i,j,1)
++!  end do
++!     write(11,*)' '
++!  end do
++!  close(11)   
+ !
+-  open(11,file = dir//'BOTTOM_VY.'//trim(cloop),form='formatted')
+-  do i = 0, nx_r
+-  do j=  0, ny_r
+-    write(11,*) xc_r(i),yc_r(j),vy_r(i,j,1)
+-  end do
+-     write(11,*)' '
+-  end do
+-  close(11)
++!  open(11,file = dir//'BOTTOM_VY.'//trim(cloop),form='formatted')
++!  do i = 0, nx_r
++!  do j=  0, ny_r
++!    write(11,*) xc_r(i),yc_r(j),vy_r(i,j,1)
++!  end do
++!     write(11,*)' '
++!  end do
++!  close(11)
+ !
+-  open(11,file = dir//'BOTTOM_VZ.'//trim(cloop),form='formatted')
+-  do i = 0, nx_r
+- do j=  0, ny_r
+-     write(11,*) xc_r(i),yc_r(j),vz_r(i,j,1)
+-  end do
+-     write(11,*)' '
+-  end do
+-  close(11)
++!  open(11,file = dir//'BOTTOM_VZ.'//trim(cloop),form='formatted')
++!  do i = 0, nx_r
++! do j=  0, ny_r
++!     write(11,*) xc_r(i),yc_r(j),vz_r(i,j,1)
++!  end do
++!     write(11,*)' '
++!  end do
++!  close(11)
+ !
+   
+ !  open(11,file = dir//'BOTTOM_CX.'//trim(cloop),form='formatted')
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+diff --git a/Crop_MergeCode/ana.f90 b/Crop_MergeCode/ana.f90
+index 378f3dc..a84c470 100644
+--- a/Crop_MergeCode/ana.f90
++++ b/Crop_MergeCode/ana.f90
+@@ -46,20 +46,20 @@
+ ! -------------------------------------------------------------------------------  
+ ! Height of MFR                  
+ ! ------------------------------------------------------------------------------- 
+-!  do k = 0,nz_r/2
+-!    if(bx_r(nx_r/2,ny_r/2,k+1)*bx_r(nx_r/2,ny_r/2,k)<0) then
+-!      zc_mfr = zc_r(k)
+-!    endif
+-!  enddo
+-
+-!  open(11,file = dir//'BX_1D.'//trim(cloop),form='formatted')
+-!  do k=  0, nz_r
+-!     write(11,*) k,bx_r(nx_r/2,ny_r/2,k)
+-!  end do
+-!  close(11)
+-
+-!  open(91,file = dir//'TIME_MFR',form='formatted')
+-!  write(91,*) atime, zc_mfr
++  do k = 4,nz_r-4 !changed from k=1,nz_r-2
++    if(bx_r(nx_r/2,ny_r/2,k+1)*bx_r(nx_r/2,ny_r/2,k)<0) then
++      zc_mfr = zc_r(k)
++    endif
++  enddo
++
++  open(11,file = dir//'BX_1D.'//trim(cloop),form='formatted')
++  do k=  0, nz_r
++     write(11,*) k,bx_r(nx_r/2,ny_r/2,k)
++  end do
++  close(11)
++
++  open(91,file = dir//'TIME_MFR',form='formatted')
++  write(91,*) atime, zc_mfr
+ 
+ ! ------------------------------------------------------------------------------  
+ ! OUTPUT                                                                          

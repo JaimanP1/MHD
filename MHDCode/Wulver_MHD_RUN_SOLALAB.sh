@@ -15,7 +15,7 @@
 #SBATCH --mem-per-cpu=4G 
 
 # Time required in d-hh:mm:ss format; lower time gets scheduling priority
-#SBATCH --time=36:00:00
+#SBATCH --time=72:00:00
 
 # Purge and load the correct modules
 module purge > /dev/null 2>&1

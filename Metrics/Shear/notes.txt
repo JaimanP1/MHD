@@ -1,0 +1,3 @@
+Want to track magnetic shear on bottom field.
+
+Bash script is to first compare effect of imposed velocity shearing motion on helicity by checking VX, VY, VZ movies. To achieve opposite shearing motion, vx --. -vx, -vy --> vy. The time_crit is kept to 2.25 for both runs

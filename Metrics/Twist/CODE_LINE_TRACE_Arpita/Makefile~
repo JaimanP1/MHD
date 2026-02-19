@@ -1,0 +1,21 @@
+# FORT = ifort
+FC = gfortran 
+# OPT = -O3 -parallel -mcmodel=large -i-dynamic -CB -traceback
+OPT = -mcmodel=large -fbacktrace -fcheck=all
+
+
+#LIBS =  -L/usr/local/pgplot -lpgplot -L/usr/X11R6/lib -lX11 -lm
+SRC = main.f90 bline.f90 sint.f90 ana.f90 
+INC = paramete.f90 common.f90
+OBJ = $(SRC:%.f90=%.o)
+EXEC = twist_ar11283
+
+main : $(OBJ) 
+	$(FC) $(OPT) $(LIBS) $(OBJ) -o $(EXEC)
+
+%.o : %.f90 $(INC)
+	$(FC) -c $< $(OPT) 
+
+clean:
+	rm -f $(OBJ) $(EXEC)
+

@@ -1,0 +1,13 @@
+case1
+1,40, 0.9, 1.0, 0.6, 200    !  dimension, line_number, red, gree, blue,radius
+1.82, 1.02, 0.00, 0.005, 0.00, 0.0  ! (x,y,z)_0, (dx,dy,dz)_1,
+
+case2
+1,20, 0.9, 1.0, 0.6, 200    !  dimension, line_number, red, gree, blue,radius
+1.91, 1.01, 0.00, 0.000, 0.005, 0.0  ! (x,y,z)_0, (dx,dy,dz)_1,
+
+
+case3
+1,20, 0.9, 1.0, 0.6, 200    !  dimension, line_number, red, gree, blue,radius
+1.95, 1.07, 0.00, 0.000, 0.005, 0.0  ! (x,y,z)_0, (dx,dy,dz)_1,
+(2.03)
