@@ -687,18 +687,18 @@
 
   ro_arr = LOG( MAX(ro_arr(:,:,:), 1.0E-30)) ! plotting log of ro, taking care of negatives with max
  
-!  ro_vp(:,:,:) = real(ro_arr(:,:,:))  
-!  bx_vp(:,:,:) = real(bx_arr(:,:,:))
-!  by_vp(:,:,:) = real(by_arr(:,:,:))
-!  bz_vp(:,:,:) = real(bz_arr(:,:,:))
-!  vx_vp(:,:,:) = real(vx_arr(:,:,:))
-!  vy_vp(:,:,:) = real(vy_arr(:,:,:))
-!  vz_vp(:,:,:) = real(vz_arr(:,:,:))
-!  cz_vp(:,:,:) = real(cz_arr(:,:,:))
-!  ct_vp(:,:,:) = real(ct_arr  (:,:,:))
-!  vt_vp(:,:,:) = sqrt(vx_vp(:,:,:)**2 + vy_vp(:,:,:)**2 + vz_vp(:,:,:)**2) 
-!  ct_bt_vp(:,:,:) = real(ct_arr(:,:,:)/bt_arr(:,:,:))
-!  divv_vp (:,:,:) = real(divv_r(:,:,:))
+  ro_vp(:,:,:) = real(ro_arr(:,:,:))  
+  bx_vp(:,:,:) = real(bx_arr(:,:,:))
+  by_vp(:,:,:) = real(by_arr(:,:,:))
+  bz_vp(:,:,:) = real(bz_arr(:,:,:))
+  vx_vp(:,:,:) = real(vx_arr(:,:,:))
+  vy_vp(:,:,:) = real(vy_arr(:,:,:))
+  vz_vp(:,:,:) = real(vz_arr(:,:,:))
+  cz_vp(:,:,:) = real(cz_arr(:,:,:))
+  ct_vp(:,:,:) = real(ct_arr  (:,:,:))
+  vt_vp(:,:,:) = sqrt(vx_vp(:,:,:)**2 + vy_vp(:,:,:)**2 + vz_vp(:,:,:)**2) 
+  ct_bt_vp(:,:,:) = real(ct_arr(:,:,:)/bt_arr(:,:,:))
+  divv_vp (:,:,:) = real(divv_r(:,:,:))
 ! ------------------------------------------------------------------
 !                   AVS File Output
 ! ------------------------------------------------------------------ 
@@ -740,57 +740,57 @@
   write(FILE_AVS_FIELD,*) &
        'variable 1 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) bx_vp !100 stands for label of format specifier
+       write(FILE_3D_SPARSE) bx_vp !bx_arr
   close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.BY.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 2 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) by_vp
+       write(FILE_3D_SPARSE) by_vp !by_arr
   close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.BZ.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
        'variable 3 file='//trim(filename)//' filetype=unformatted'
   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) bz_vp
+       write(FILE_3D_SPARSE) bz_vp !bz_arr
   close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.RO'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 4 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) ro_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.RO'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 4 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) ro_vp
+  close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.VX.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!      'variable 5 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) vx_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.VX.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+      'variable 5 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) vx_vp
+  close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.VY.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 6 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) vy_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.VY.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 6 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) vy_vp
+  close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.VZ.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 5 file='//trim(filename)//' filetype=unformatted'
-!   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) vz_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.VZ.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 5 file='//trim(filename)//' filetype=unformatted'
+   open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) vz_vp
+  close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.VT.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 5 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) vt_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.VT.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 5 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) vt_vp
+  close(FILE_3D_SPARSE)
 !
   filename = trim(cfile_3d_field)//'.'//cseries//'.CX.R'//'.'//trim(cloop)
   write(FILE_AVS_FIELD,*) &
@@ -813,26 +813,26 @@
        write(FILE_3D_SPARSE) cz_r
   close(FILE_3D_SPARSE)
 !
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 6 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) ct_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
+  write(FILE_AVS_FIELD,*) &
+       'variable 6 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) ct_vp
+  close(FILE_3D_SPARSE)
 
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 6 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) ct_bt_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.CT_BT.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 6 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) ct_bt_vp
+  close(FILE_3D_SPARSE)
 
-!  filename = trim(cfile_3d_field)//'.'//cseries//'.DIVV.R'//'.'//trim(cloop)
-!  write(FILE_AVS_FIELD,*) &
-!       'variable 6 file='//trim(filename)//' filetype=unformatted'
-!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-!       write(FILE_3D_SPARSE) divv_vp
-!  close(FILE_3D_SPARSE)
+  filename = trim(cfile_3d_field)//'.'//cseries//'.DIVV.R'//'.'//trim(cloop)
+  write(FILE_AVS_FIELD,*) &
+       'variable 6 file='//trim(filename)//' filetype=unformatted'
+  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+       write(FILE_3D_SPARSE) divv_vp
+  close(FILE_3D_SPARSE)
 
 !
   close(FILE_AVS_FIELD)

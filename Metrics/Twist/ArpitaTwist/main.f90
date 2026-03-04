@@ -62,32 +62,32 @@
 ! -----------------------------------------------------------------------------
 ! Read 3D field from AVS field data
 ! -----------------------------------------------------------------------------
-  open(10,file=dir_r//'B3D.001.BX.R.014',form='UNFORMATTED',status='OLD')
+  open(10,file=dir_r//'B3D.001.BX.R.010',form='UNFORMATTED',status='OLD')
   read(10) a3d
   close(10)
   call reduced_array(a3d,bx)
 !
-  open(10,file=dir_r//'B3D.001.BY.R.014',form='UNFORMATTED',status='OLD')
+  open(10,file=dir_r//'B3D.001.BY.R.010',form='UNFORMATTED',status='OLD')
   read(10) a3d
   close(10)
   call reduced_array(a3d,by)
 !
-  open(10,file=dir_r//'B3D.001.BZ.R.014',form='UNFORMATTED',status='OLD')
+  open(10,file=dir_r//'B3D.001.BZ.R.010',form='UNFORMATTED',status='OLD')
   read(10) a3d
   close(10)
   call reduced_array(a3d,bz)
 !
-  open(10,file=dir_r//'B3D.001.CX.R.014',form='UNFORMATTED',status='OLD')
+  open(10,file=dir_r//'B3D.001.CX.R.010',form='UNFORMATTED',status='OLD')
   read(10) a3d
   close(10)
   call reduced_array(a3d,cx)
 !
-  open(10,file=dir_r//'B3D.001.CY.R.014',form='UNFORMATTED',status='OLD')
+  open(10,file=dir_r//'B3D.001.CY.R.010',form='UNFORMATTED',status='OLD')
   read(10) a3d
   close(10)
   call reduced_array(a3d,cy)
 !
-  open(10,file=dir_r//'B3D.001.CZ.R.014',form='UNFORMATTED',status='OLD')
+  open(10,file=dir_r//'B3D.001.CZ.R.010',form='UNFORMATTED',status='OLD')
   read(10) a3d
   close(10)
   call reduced_array(a3d,cz)

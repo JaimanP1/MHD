@@ -26,8 +26,8 @@ integer,parameter :: nxyz=(nxl+1)*(nyl+1)*(nzl+1)    ! In this case 361*361*361
 real(8),parameter :: pi=3.14159265358979329d0,pi2=6.2831853071795864d0
 
 ! Adding z_cri to calculate Twist above the bottom boundary
-!real(8),parameter :: z_cri = 1.0d0 / 360.0d0   ! 1 grid above the bottom boundary
-real(8),parameter :: z_cri = 2.0d0 / 360.0d0    ! 2 grids above the bottom boundary
+real(8),parameter :: z_cri = 1.0d0 / 360.0d0   ! 1 grid above the bottom boundary
+!real(8),parameter :: z_cri = 2.0d0 / 360.0d0    ! 2 grids above the bottom boundary
 
-character(*) ,parameter ::dir_r  = '/project/cstr/Jaiman/sp26/Project1/Test2/VAPOR_Twist/'
-character(*) ,parameter ::dir    = '/project/cstr/Jaiman/sp26/Project1/Test2/Metrics/Twist/'
+character(*) ,parameter ::dir_r  = '/project/cstr/Jaiman/sp26/Project1/Test4/VAPOR_Twist/'
+character(*) ,parameter ::dir    = '/project/cstr/Jaiman/sp26/Project1/Test4/Metrics/Twist/'

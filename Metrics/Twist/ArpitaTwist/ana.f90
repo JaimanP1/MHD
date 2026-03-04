@@ -15,7 +15,7 @@
 ! Output of data for the final value
 ! --------------------------------------------------------------------------
 ! magnetic twist Tw = (1/4.pi)*alpha.dl = (1/4.pi)*alpha_total                             
-   open(75,file = dir//'TWIST_MAP',form='formatted')
+   open(75,file = dir//'TWIST_MAP_10',form='formatted')
    write(75,*) x0,y0,alpha_total/pi/4.
    
 !   Open the TWIST_CHECK file once 

@@ -1,5 +1,5 @@
 #!/bin/bash -l                                                                   
-#SBATCH --job-name=twist_mhd
+#SBATCH --job-name=10_twist_mhd
 #SBATCH --output=Out_files/%x.%j.out                                                       
 #SBATCH --error=Err_files/%x.%j.err                                                        
 #SBATCH --partition=general                                                      
@@ -16,3 +16,4 @@ module load GCC/14.2.0
 
 make
 srun ./twist_mhd
+make clean 
