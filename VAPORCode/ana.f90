@@ -52,14 +52,14 @@
     endif
   enddo
 
-  open(11,file = dir//'BX_1D.'//trim(cloop),form='formatted')
-  do k=  0, nz_r
-     write(11,*) k,bx_r(nx_r/2,ny_r/2,k)
-  end do
-  close(11)
+!  open(11,file = dir//'BX_1D.'//trim(cloop),form='formatted')
+!  do k=  0, nz_r
+!     write(11,*) k,bx_r(nx_r/2,ny_r/2,k)
+!  end do
+!  close(11)
 
-  open(91,file = dir//'TIME_MFR',form='formatted')
-  write(91,*) atime, zc_mfr
+!  open(91,file = dir//'TIME_MFR',form='formatted')
+!  write(91,*) atime, zc_mfr
 
 ! ------------------------------------------------------------------------------  
 ! OUTPUT                                                                          
@@ -169,11 +169,11 @@
   end do
   end do
 
-  open(12,file = dir//'DECAY_INDEX',form='formatted')
-  do k = 1,nz_r   
-     write(12,*)zc_r(k), decay_index(k)
-  end do   
-  close(12)
+!  open(12,file = dir//'DECAY_INDEX',form='formatted')
+!  do k = 1,nz_r   
+!     write(12,*)zc_r(k), decay_index(k)
+!  end do   
+!  close(12)
 
 ! ===================================================================
 ! Magnetic, Kinetic, Energy 

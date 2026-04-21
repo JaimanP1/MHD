@@ -5,15 +5,15 @@ from pathlib import Path
 # -----------------------------
 # USER SETTINGS
 # -----------------------------
-#RUN_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test4/Metrics/Twist/")
-RUN_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test3/Metrics/Twist/")
-#VAPOR_DIR = Path("/project/cstr/Jaiman/sp26/Project1/Test4/VAPOR/Merge/")
-VAPOR_DIR = Path("/project/cstr/Jaiman/fa25/Project1/Test1/VAPOR/Merge/")
-#OUT_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test4/Metrics/Flux/")
-OUT_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test3/Metrics/Flux/")
+RUN_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test4/Metrics/Twist/")
+#RUN_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test3/Metrics/Twist/")
+VAPOR_DIR = Path("/project/cstr/Jaiman/sp26/Project1/Test4/VAPOR2/Merge/")
+#VAPOR_DIR = Path("/project/cstr/Jaiman/fa25/Project1/Test1/VAPOR/Merge/")
+OUT_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test4/Metrics/Flux/")
+#OUT_DIR   = Path("/project/cstr/Jaiman/sp26/Project1/Test3/Metrics/Flux/")
 
 TIME_STEPS = range(10, 81, 10)
-TW_THRESHOLD = 0.001
+TW_THRESHOLD = 0.1
 DX = None
 DY = None
 

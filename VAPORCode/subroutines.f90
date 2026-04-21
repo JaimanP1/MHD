@@ -736,26 +736,26 @@
 
 100 format(1e25.16) !to correctly format the data
 
-  filename = trim(cfile_3d_field)//'.'//cseries//'.BX.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 1 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) bx_arr !bx_vp
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.BX.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 1 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) bx_arr !bx_vp
+!  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.BY.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 2 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) by_arr !by_vp
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.BY.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 2 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) by_arr !by_vp
+!  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.BZ.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 3 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) bz_arr !bz_vp
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.BZ.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 3 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) bz_arr !bz_vp
+!  close(FILE_3D_SPARSE)
 !
 !  filename = trim(cfile_3d_field)//'.'//cseries//'.RO'//'.'//trim(cloop)
 !  write(FILE_AVS_FIELD,*) &
@@ -792,26 +792,26 @@
 !       write(FILE_3D_SPARSE) vt_vp
 !  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.CX.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 9 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) cx_r
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.CX.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 9 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) cx_r
+!  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.CY.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 10 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) cy_r
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.CY.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 10 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) cy_r
+!  close(FILE_3D_SPARSE)
 !
-  filename = trim(cfile_3d_field)//'.'//cseries//'.CZ.R'//'.'//trim(cloop)
-  write(FILE_AVS_FIELD,*) &
-       'variable 11 file='//trim(filename)//' filetype=unformatted'
-  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
-       write(FILE_3D_SPARSE) cz_r
-  close(FILE_3D_SPARSE)
+!  filename = trim(cfile_3d_field)//'.'//cseries//'.CZ.R'//'.'//trim(cloop)
+!  write(FILE_AVS_FIELD,*) &
+!       'variable 11 file='//trim(filename)//' filetype=unformatted'
+!  open(FILE_3D_SPARSE,file=dir_a//trim(filename),form='unformatted')
+!       write(FILE_3D_SPARSE) cz_r
+!  close(FILE_3D_SPARSE)
 !
 !  filename = trim(cfile_3d_field)//'.'//cseries//'.CB2.R'//'.'//trim(cloop) 
 !  write(FILE_AVS_FIELD,*) &
